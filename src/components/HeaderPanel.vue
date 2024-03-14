@@ -7,15 +7,15 @@
         {{ headerContent.name }}
       </h1>
       <h2
-        class="mt-3 text-lg text-slate-200 font-medium tracking-tight sm:text-xl"
+        class="mt-3 ml-2 text-lg text-slate-200 font-medium tracking-tight sm:text-xl"
       >
         {{ headerContent.role }}
       </h2>
-      <p class="mt-4 max-w-xs leading-normal">
+      <p class="mt-4 ml-2 max-w-xs leading-normal">
         {{ headerContent.intro }}
       </p>
       <nav class="nav hidden lg:block">
-        <ul class="mt-16 w-max">
+        <ul class="mt-16 ml-2 w-max">
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#education">Education</a></li>
@@ -24,7 +24,7 @@
       </nav>
     </div>
 
-    <ul class="ml-1 mt-8 flex items-center">
+    <ul class="ml-3 mt-8 flex items-center">
       <li class="mr-5 text-xs shrink-0"><a href="">Github</a></li>
       <li class="mr-5 text-xs shrink-0"><a href="">LinkedIn</a></li>
       <li class="mr-5 text-xs shrink-0"><a href="">Instagram</a></li>
