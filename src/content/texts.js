@@ -7,17 +7,17 @@ export const headerContent = {
 export const aboutContent = {
   id: "about",
   title: "About",
-  story:
+  paragraphs: [
     "blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah",
-  text: "blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah",
-  hobbies:
+    "blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah",
     "blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah",
+  ],
 };
 
 export const experienceContent = {
   id: "experience",
   title: "Experience",
-  techJobs: [
+  technicalExperience: [
     {
       key: "1",
       dates: "August 2023 - February 2024",
@@ -29,35 +29,6 @@ export const experienceContent = {
       techStack: ["JavaScript", "Vue", "Vuex", "VueRouter", "Tailwind", "Git"],
     },
   ],
-  otherExp: [
-    {
-      key: "1",
-      dates: "August 2021 - Present",
-      title: "Quality Control Specialist",
-      company: "Elbak Inc.",
-      link: "https://contractuo.com/",
-      description: "Leading a team...",
-      softSkills: ["Communication", "Problem-Solving", "Planning"],
-    },
-    {
-      key: "2",
-      dates: "June 2019 - July 2021",
-      title: "Retails Sales Manager",
-      company: "Creative Solutions",
-      link: "https://contractuo.com/",
-      description: "Developed and maintained web apps...",
-      softSkills: ["JavaScript", "React", "Redux"],
-    },
-    {
-      key: "2",
-      dates: "June 2019 - July 2021",
-      title: "Retails Sales Manager",
-      company: "Creative Solutions",
-      link: "https://contractuo.com/",
-      description: "Developed and maintained web apps...",
-      softSkills: ["JavaScript", "React", "Redux"],
-    },
-  ],
 };
 
 export const educationContent = {
@@ -66,27 +37,31 @@ export const educationContent = {
   schools: [
     {
       key: "1",
-      dates: "Octomber 2013 - July 2021",
-      title: "",
-      school: "",
-      link: "https://contractuo.com/",
-      description: "",
+      dates: "March 2024 - Present",
+      title: "Full-stack engineering Stream",
+      school: "TechPro Academy",
+      link: "https://www.techproacademy.gr/",
+      description:
+        "blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah",
     },
     {
       key: "2",
-      dates: "Octomber 2013 - July 2021",
-      title: "",
-      school: "",
-      link: "https://contractuo.com/",
-      description: "",
+      dates: "October 2022 - Present",
+      title: "Master - Information Systems",
+      school: "International Hellenic University",
+      link: "https://mais.ihu.gr/",
+      description:
+        "blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah",
     },
     {
       key: "3",
-      dates: "Octomber 2013 - July 2021",
-      title: "",
-      school: "",
-      link: "https://contractuo.com/",
-      description: "",
+      dates: "October 2013 - Jan 2021",
+      title:
+        "Integrated Master - Forestry & Management Of The Environment & Natural Resources",
+      school: "Democritus University Of Thrace",
+      link: "https://fmenr.duth.gr/",
+      description:
+        "blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah",
     },
   ],
 };
@@ -98,10 +73,11 @@ export const projectsContent = {
     {
       key: "1",
       icon: "",
-      title: "",
+      title: "Facial Recognition",
       link: "https://contractuo.com/",
-      description: "",
-      techStack: [""],
+      description:
+        "blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah ",
+      techStack: ["JavaScript", "React", "Redux"],
     },
   ],
 };

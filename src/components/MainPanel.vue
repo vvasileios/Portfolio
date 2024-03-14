@@ -2,9 +2,9 @@
   <main class="pt-24 lg:w-1/2 lg:py-24">
     <content-section :id="aboutContent.id" :title="aboutContent.title">
       <template #content>
-        <p>{{ aboutContent.story }}</p>
-        <p>{{ aboutContent.text }}</p>
-        <p>{{ aboutContent.hobbies }}</p>
+        <p v-for="(text, index) in aboutContent.paragraphs" :key="index">
+          {{ text }}
+        </p>
       </template>
     </content-section>
 
@@ -14,7 +14,7 @@
     >
       <template #content>
         <Card
-          v-for="job in experienceContent.techJobs"
+          v-for="job in experienceContent.technicalExperience"
           :key="job.key"
           :dates="job.dates"
           :title="job.title"
@@ -26,19 +26,31 @@
       </template>
     </content-section>
 
-    <content-section :id="aboutContent.id" :title="aboutContent.title">
+    <content-section :id="educationContent.id" :title="educationContent.title">
       <template #content>
-        <p class="mt-5">{{ aboutContent.story }}</p>
-        <p class="mt-5">{{ aboutContent.text }}</p>
-        <p class="mt-5">{{ aboutContent.hobbies }}</p>
+        <Card
+          v-for="school in educationContent.schools"
+          :key="school.key"
+          :dates="school.dates"
+          :title="school.title"
+          :company="school.school"
+          :description="school.description"
+          :link="school.link"
+        />
       </template>
     </content-section>
 
-    <content-section :id="aboutContent.id" :title="aboutContent.title">
+    <content-section :id="projectsContent.id" :title="projectsContent.title">
       <template #content>
-        <p class="mt-5">{{ aboutContent.story }}</p>
-        <p class="mt-5">{{ aboutContent.text }}</p>
-        <p class="mt-5">{{ aboutContent.hobbies }}</p>
+        <Card
+          v-for="project in projectsContent.projects"
+          :key="project.key"
+          :icon="project.icon"
+          :title="project.title"
+          :description="project.description"
+          :link="project.link"
+          :list="project.techStack"
+        />
       </template>
     </content-section>
   </main>
@@ -47,7 +59,12 @@
 <script>
 import ContentSection from "./shared/ContentSection.vue";
 import Card from "./shared/Card.vue";
-import { aboutContent, experienceContent } from "@/content/texts.js";
+import {
+  aboutContent,
+  experienceContent,
+  educationContent,
+  projectsContent,
+} from "@/content/texts.js";
 
 export default {
   name: "MainPanel",
@@ -61,6 +78,8 @@ export default {
     return {
       aboutContent,
       experienceContent,
+      educationContent,
+      projectsContent,
     };
   },
 };
