@@ -20,13 +20,20 @@ export const experienceContent = {
   technicalExperience: [
     {
       key: "1",
-      dates: "August 2023 - February 2024",
-      title: "Junior Software Developer",
+      dates: "Aug 2023 - Feb 2024",
+      title: "Junior Software Developer ·",
       company: "Contractuo",
       link: "https://contractuo.com/",
       description:
         "blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah",
-      techStack: ["JavaScript", "Vue", "Vuex", "VueRouter", "Tailwind", "Git"],
+      techStack: [
+        "JavaScript",
+        "Vue",
+        "Vuex",
+        "VueRouter",
+        "TailwindCSS",
+        "Git",
+      ],
     },
   ],
 };
@@ -37,8 +44,8 @@ export const educationContent = {
   schools: [
     {
       key: "1",
-      dates: "March 2024 - Present",
-      title: "Full-stack engineering Stream",
+      dates: "Mar 2024 - Present",
+      title: "Full-stack Engineering Stream ·",
       school: "TechPro Academy",
       link: "https://www.techproacademy.gr/",
       description:
@@ -46,8 +53,8 @@ export const educationContent = {
     },
     {
       key: "2",
-      dates: "October 2022 - Present",
-      title: "Master - Information Systems",
+      dates: "Oct 2022 - Present",
+      title: "MSc, Information Systems ·",
       school: "International Hellenic University",
       link: "https://mais.ihu.gr/",
       description:
@@ -55,9 +62,9 @@ export const educationContent = {
     },
     {
       key: "3",
-      dates: "October 2013 - Jan 2021",
+      dates: "Oct 2013 - Jan 2021",
       title:
-        "Integrated Master - Forestry & Management Of The Environment & Natural Resources",
+        "IM, Forestry & Management of the Environment & Natural Resources ·",
       school: "Democritus University Of Thrace",
       link: "https://fmenr.duth.gr/",
       description:
