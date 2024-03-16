@@ -111,7 +111,7 @@ export const projectsContent = {
       link: "https://github.com/vvasileios/Face-Recognition",
       description:
         "blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah ",
-      techStack: ["JavaScript", "Vue", "Vuex", "Vue Router", "TailwindCSS"],
+      techStack: ["JavaScript", "React", "Node", "Express", "PostgreSQL"],
     },
   ],
 };

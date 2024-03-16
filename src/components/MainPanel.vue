@@ -57,12 +57,15 @@
         />
       </template>
     </content-section>
+
+    <Footer />
   </main>
 </template>
 
 <script>
 import ContentSection from "./shared/ContentSection.vue";
 import Card from "./shared/Card.vue";
+import Footer from "./shared/Footer.vue";
 import {
   aboutContent,
   experienceContent,
@@ -76,6 +79,7 @@ export default {
   components: {
     ContentSection,
     Card,
+    Footer,
   },
 
   data() {
