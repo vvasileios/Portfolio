@@ -1,7 +1,8 @@
 <template>
   <a
     :href="link"
-    class="font-medium text-slate-400 hover:text-teal-300 focus-visible:text-teal-300"
+    class="font-medium hover:text-teal-300 focus-visible:text-teal-300"
+    :class="[aboutContent ? 'text-slate-200' : 'text-slate-400']"
     target="_blank"
     rel="noreferrer noopener"
   >
@@ -22,6 +23,11 @@ export default {
     text: {
       type: String,
       default: "",
+    },
+
+    aboutContent: {
+      type: Boolean,
+      default: false,
     },
   },
 };
