@@ -80,11 +80,38 @@ export const projectsContent = {
     {
       key: "1",
       icon: "",
-      title: "Facial Recognition",
-      link: "https://contractuo.com/",
+      title: "Portfolio",
+      link: "https://github.com/vvasileios/Portfolio",
       description:
         "blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah ",
-      techStack: ["JavaScript", "React", "Redux"],
+      techStack: ["JavaScript", "Vue", "Vuex", "Vue Router", "TailwindCSS"],
+    },
+    {
+      key: "2",
+      icon: "",
+      title: "Time-Series Visualization",
+      link: "https://github.com/vvasileios/timeseries-visualization",
+      description:
+        "blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah ",
+      techStack: ["JavaScript", "Vue", "Vuex", "TailwindCSS"],
+    },
+    {
+      key: "3",
+      icon: "",
+      title: "Spaceflight News Blog",
+      link: "https://github.com/vvasileios/spaceflight-news",
+      description:
+        "blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah ",
+      techStack: ["JavaScript", "Vue", "Vuex", "Vue Router", "TailwindCSS"],
+    },
+    {
+      key: "4",
+      icon: "",
+      title: "Face Recognition",
+      link: "https://github.com/vvasileios/Face-Recognition",
+      description:
+        "blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah ",
+      techStack: ["JavaScript", "Vue", "Vuex", "Vue Router", "TailwindCSS"],
     },
   ],
 };
