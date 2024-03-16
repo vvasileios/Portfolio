@@ -1,7 +1,7 @@
 <template>
   <a
     :href="link"
-    class="mb-12 group grid sm:grid-cols-7 grid-cols-1"
+    class="mb-12 group grid sm:grid-cols-7 grid-cols-1 rounded transition duration-300 ease-in-out transform hover:scale-105"
     target="_blank"
     rel="noopener noreferrer"
   >
@@ -18,7 +18,7 @@
 
     <div class="col-span-5">
       <h3
-        class="mt-1 font-medium leading-snug text-slate-200 group-hover:text-teal-300"
+        class="font-medium leading-snug text-slate-200 group-hover:text-teal-300 transition-colors duration-300"
       >
         {{ title }} {{ company }}
       </h3>
