@@ -25,7 +25,9 @@
       <p class="mt-2 text-sm leading-normal">{{ description }}</p>
       <ul v-if="list" class="mt-2 flex flex-wrap">
         <li v-for="item in list" :key="item" class="mr-1.5 mt-2">
-          {{ item }}
+          <Pill :colors="'bg-teal-400/10 text-teal-300'">
+            {{ item }}
+          </Pill>
         </li>
       </ul>
     </div>
@@ -33,8 +35,13 @@
 </template>
 
 <script>
+import Pill from "./Pill.vue";
 export default {
   name: "Card",
+
+  components: {
+    Pill,
+  },
 
   props: {
     icon: {
