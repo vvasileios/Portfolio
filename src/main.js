@@ -3,8 +3,8 @@ import { createApp } from "vue";
 import store from "./store/index.js";
 import "./assets/index.css";
 
-import App from "./App.vue";
+import Home from "./pages/Home.vue";
 
-const app = createApp(App);
+const app = createApp(Home);
 app.use(store);
 app.mount("#app");

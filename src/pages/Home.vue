@@ -11,11 +11,11 @@
 </template>
 
 <script>
-import HeaderPanel from "./components/HeaderPanel.vue";
-import MainPanel from "./components/MainPanel.vue";
+import HeaderPanel from "@/components/HeaderPanel.vue";
+import MainPanel from "@/components/MainPanel.vue";
 
 export default {
-  name: "App",
+  name: "Home",
 
   components: {
     HeaderPanel,
