@@ -39,9 +39,33 @@
     </div>
 
     <ul class="ml-3 mt-8 flex items-center">
-      <li class="mr-5 text-xs shrink-0"><a href="">Github</a></li>
-      <li class="mr-5 text-xs shrink-0"><a href="">LinkedIn</a></li>
-      <li class="mr-5 text-xs shrink-0"><a href="">Instagram</a></li>
+      <li class="mr-5 shrink-0">
+        <a
+          href="https://github.com/vvasileios"
+          :class="socialClasses"
+          aria-label="Github"
+        >
+          <font-awesome-icon :icon="['fab', 'github']" size="lg" />
+        </a>
+      </li>
+      <li class="mr-5 shrink-0">
+        <a
+          href="https://www.linkedin.com/in/vasileios-vasileiadis-999405221/"
+          :class="socialClasses"
+          aria-label="LinkedIn"
+        >
+          <font-awesome-icon :icon="['fab', 'linkedin']" size="lg" />
+        </a>
+      </li>
+      <li class="mr-5 shrink-0">
+        <a
+          href="https://www.instagram.com/vasilis_vasil/"
+          :class="socialClasses"
+          aria-label="Instagram"
+        >
+          <font-awesome-icon :icon="['fab', 'instagram']" size="lg" />
+        </a>
+      </li>
     </ul>
   </header>
 </template>
@@ -53,6 +77,7 @@ export default {
   data() {
     return {
       headerContent,
+      socialClasses: "hover:text-teal-300 focus:text-teal-300",
     };
   },
 
