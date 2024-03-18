@@ -16,20 +16,20 @@
       </p>
       <nav class="nav hidden lg:block">
         <ul class="mt-16 ml-2 w-max">
-          <li>
+          <li :class="{ 'text-slate-200': activeSection === 'about' }">
             <a href="#about" @click="updateSelectedSection('about')"> About </a>
           </li>
-          <li>
+          <li :class="{ 'text-slate-200': activeSection === 'experience' }">
             <a href="#experience" @click="updateSelectedSection('experience')">
               Experience
             </a>
           </li>
-          <li>
+          <li :class="{ 'text-slate-200': activeSection === 'education' }">
             <a href="#education" @click="updateSelectedSection('education')">
               Education
             </a>
           </li>
-          <li>
+          <li :class="{ 'text-slate-200': activeSection === 'projects' }">
             <a href="#projects" @click="updateSelectedSection('projects')">
               Projects
             </a>
@@ -72,6 +72,7 @@
 
 <script>
 import { headerContent } from "@/content/texts";
+import { mapGetters } from "vuex";
 
 export default {
   data() {
@@ -81,7 +82,15 @@ export default {
     };
   },
 
+  computed: {
+    ...mapGetters({
+      activeSection: "getActiveSection",
+    }),
+  },
+
   methods: {
+    activeSection() {},
+
     updateSelectedSection(section) {
       console.log(section);
       this.$store.dispatch("updateActiveSection", section);

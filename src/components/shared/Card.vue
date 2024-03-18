@@ -18,7 +18,7 @@
 
     <div class="col-span-5">
       <h3
-        class="font-medium leading-snug text-slate-200 group-hover:text-teal-300 transition-colors duration-300"
+        class="font-medium leading-snug text-slate-200 group-hover:text-teal-300 group-focus:text-teal-300 transition-colors duration-300"
       >
         {{ title }} {{ company }}
       </h3>
