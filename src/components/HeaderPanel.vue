@@ -16,20 +16,34 @@
       </p>
       <nav class="nav hidden lg:block">
         <ul class="mt-16 ml-2 w-max">
-          <li :class="{ 'text-slate-200': activeSection === 'about' }">
+          <li
+            :class="{ 'text-slate-200 font-bold': activeSection === 'about' }"
+          >
             <a href="#about" @click="updateSelectedSection('about')"> About </a>
           </li>
-          <li :class="{ 'text-slate-200': activeSection === 'experience' }">
+          <li
+            :class="{
+              'text-slate-200 font-bold': activeSection === 'experience',
+            }"
+          >
             <a href="#experience" @click="updateSelectedSection('experience')">
               Experience
             </a>
           </li>
-          <li :class="{ 'text-slate-200': activeSection === 'education' }">
+          <li
+            :class="{
+              'text-slate-200 font-bold': activeSection === 'education',
+            }"
+          >
             <a href="#education" @click="updateSelectedSection('education')">
               Education
             </a>
           </li>
-          <li :class="{ 'text-slate-200': activeSection === 'projects' }">
+          <li
+            :class="{
+              'text-slate-200 font-bold': activeSection === 'projects',
+            }"
+          >
             <a href="#projects" @click="updateSelectedSection('projects')">
               Projects
             </a>
