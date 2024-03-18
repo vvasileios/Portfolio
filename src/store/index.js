@@ -1,8 +1,10 @@
 import { createStore } from "vuex";
 
 export default createStore({
-  state: {
-    activeSection: "about",
+  state() {
+    return {
+      activeSection: "about",
+    };
   },
 
   getters: {
