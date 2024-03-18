@@ -16,10 +16,24 @@
       </p>
       <nav class="nav hidden lg:block">
         <ul class="mt-16 ml-2 w-max">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#projects">Projects</a></li>
+          <li>
+            <a href="#about" @click="updateSelectedSection('about')"> About </a>
+          </li>
+          <li>
+            <a href="#experience" @click="updateSelectedSection('experience')">
+              Experience
+            </a>
+          </li>
+          <li>
+            <a href="#education" @click="updateSelectedSection('education')">
+              Education
+            </a>
+          </li>
+          <li>
+            <a href="#projects" @click="updateSelectedSection('projects')">
+              Projects
+            </a>
+          </li>
         </ul>
       </nav>
     </div>
@@ -40,6 +54,13 @@ export default {
     return {
       headerContent,
     };
+  },
+
+  methods: {
+    updateSelectedSection(section) {
+      console.log(section);
+      this.$store.dispatch("updateActiveSection", section);
+    },
   },
 };
 </script>

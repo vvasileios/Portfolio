@@ -1,11 +1,25 @@
 import { createStore } from "vuex";
 
 export default createStore({
-  state: {},
+  state: {
+    activeSection: "about",
+  },
 
-  getters: {},
+  getters: {
+    getActiveSection(state) {
+      return state.activeSection;
+    },
+  },
 
-  mutations: {},
+  mutations: {
+    SET_ACTIVE_SECTION(state, section) {
+      state.activeSection = section;
+    },
+  },
 
-  actions: {},
+  actions: {
+    updateActiveSection({ commit }, section) {
+      commit("SET_ACTIVE_SECTION", section);
+    },
+  },
 });
