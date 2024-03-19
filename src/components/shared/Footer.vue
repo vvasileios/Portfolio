@@ -18,11 +18,9 @@
 
       , deployed with
 
-      <Anchor :link="''" :text="'Web Hosting'" />
+      <Anchor :link="''" :text="'Web Hosting'" />. All icons are set through
 
-      . Inspiration and design by
-
-      <Anchor :link="'https://brittanychiang.com/'" :text="'Brittany Chiang'" />
+      <Anchor :link="'https://fontawesome.com/'" :text="'Font Awesome'" />.
     </p>
   </footer>
 </template>
