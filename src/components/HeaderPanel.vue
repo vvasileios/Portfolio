@@ -20,6 +20,13 @@
             :class="{ 'text-slate-200 font-bold': activeSection === 'about' }"
           >
             <a href="#about" @click="updateSelectedSection('about')"> About </a>
+            <font-awesome-icon
+              :icon="['fas', 'arrow-right']"
+              class="ml-3 transition"
+              :class="{
+                'ml-3 transition rotate-180': activeSection === 'about',
+              }"
+            />
           </li>
           <li
             :class="{
@@ -29,6 +36,13 @@
             <a href="#experience" @click="updateSelectedSection('experience')">
               Experience
             </a>
+            <font-awesome-icon
+              :icon="['fas', 'arrow-right']"
+              class="ml-3 transition"
+              :class="{
+                'ml-3 transition rotate-180': activeSection === 'experience',
+              }"
+            />
           </li>
           <li
             :class="{
@@ -38,6 +52,13 @@
             <a href="#education" @click="updateSelectedSection('education')">
               Education
             </a>
+            <font-awesome-icon
+              :icon="['fas', 'arrow-right']"
+              class="ml-3 transition"
+              :class="{
+                'ml-3 transition rotate-180': activeSection === 'education',
+              }"
+            />
           </li>
           <li
             :class="{
@@ -47,6 +68,13 @@
             <a href="#projects" @click="updateSelectedSection('projects')">
               Projects
             </a>
+            <font-awesome-icon
+              :icon="['fas', 'arrow-right']"
+              class="ml-3 transition"
+              :class="{
+                'ml-3 transition rotate-180': activeSection === 'projects',
+              }"
+            />
           </li>
         </ul>
       </nav>
@@ -93,6 +121,7 @@ export default {
     return {
       headerContent,
       socialClasses: "hover:text-teal-300 focus:text-teal-300",
+      sections: ["about", "experience", "education", "projects"],
     };
   },
 
@@ -103,10 +132,7 @@ export default {
   },
 
   methods: {
-    activeSection() {},
-
     updateSelectedSection(section) {
-      console.log(section);
       this.$store.dispatch("updateActiveSection", section);
     },
   },
