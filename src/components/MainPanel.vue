@@ -87,7 +87,6 @@
 </template>
 
 <script>
-import { mapGetters } from "vuex";
 import ContentSection from "./shared/ContentSection.vue";
 import Card from "./shared/Card.vue";
 import Anchor from "./shared/Anchor.vue";

@@ -16,7 +16,11 @@
       </p>
       <nav class="nav hidden lg:block">
         <ul class="mt-16 ml-2 w-max">
-          <li v-for="(section, index) in sections" :key="index">
+          <li
+            v-for="(section, index) in sections"
+            :key="index"
+            class="flex items-center gap-3 mt-2"
+          >
             <a
               :href="`#${section}`"
               @click="updateSelectedSection(section)"
@@ -29,7 +33,7 @@
             </a>
             <font-awesome-icon
               :icon="['fas', 'arrow-right']"
-              class="ml-3 transition duration-500"
+              class="transition duration-500"
               :class="{
                 'transition rotate-180 duration-500 text-slate-200':
                   activeSection === section,
