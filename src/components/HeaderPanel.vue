@@ -16,63 +16,23 @@
       </p>
       <nav class="nav hidden lg:block">
         <ul class="mt-16 ml-2 w-max">
-          <li
-            :class="{ 'text-slate-200 font-bold': activeSection === 'about' }"
-          >
-            <a href="#about" @click="updateSelectedSection('about')"> About </a>
-            <font-awesome-icon
-              :icon="['fas', 'arrow-right']"
-              class="ml-3 transition"
+          <li v-for="(section, index) in sections" :key="index">
+            <a
+              :href="`#${section}`"
+              @click="updateSelectedSection(section)"
               :class="{
-                'ml-3 transition rotate-180': activeSection === 'about',
+                'text-slate-200': activeSection === section,
               }"
-            />
-          </li>
-          <li
-            :class="{
-              'text-slate-200 font-bold': activeSection === 'experience',
-            }"
-          >
-            <a href="#experience" @click="updateSelectedSection('experience')">
-              Experience
+              class="text-sm uppercase font-medium"
+            >
+              {{ section }}
             </a>
             <font-awesome-icon
               :icon="['fas', 'arrow-right']"
-              class="ml-3 transition"
+              class="ml-3 transition duration-500"
               :class="{
-                'ml-3 transition rotate-180': activeSection === 'experience',
-              }"
-            />
-          </li>
-          <li
-            :class="{
-              'text-slate-200 font-bold': activeSection === 'education',
-            }"
-          >
-            <a href="#education" @click="updateSelectedSection('education')">
-              Education
-            </a>
-            <font-awesome-icon
-              :icon="['fas', 'arrow-right']"
-              class="ml-3 transition"
-              :class="{
-                'ml-3 transition rotate-180': activeSection === 'education',
-              }"
-            />
-          </li>
-          <li
-            :class="{
-              'text-slate-200 font-bold': activeSection === 'projects',
-            }"
-          >
-            <a href="#projects" @click="updateSelectedSection('projects')">
-              Projects
-            </a>
-            <font-awesome-icon
-              :icon="['fas', 'arrow-right']"
-              class="ml-3 transition"
-              :class="{
-                'ml-3 transition rotate-180': activeSection === 'projects',
+                'ml-3 transition rotate-180 duration-500 text-slate-200':
+                  activeSection === section,
               }"
             />
           </li>
