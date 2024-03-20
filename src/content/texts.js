@@ -27,14 +27,7 @@ export const experienceContent = {
       link: "https://contractuo.com/",
       description:
         "Developed, maintained, and shipped in production front-end code for the document management system using the Vue.js ecosystem. Applied OOP principles and the JavaScript Selection API to engineer an advanced application editor. Translated complex Figma designs into precise, functional code, ensuring consistency and high fidelity. Collaborated in an Agile environment, adapting efficiently to evolving project requirements, contributing to the timely delivery of high-quality solutions.",
-      techStack: [
-        "JavaScript",
-        "Vue",
-        "Vuex",
-        "VueRouter",
-        "TailwindCSS",
-        "Git",
-      ],
+      techStack: ["JavaScript", "Vue", "TailwindCSS", "Git"],
     },
   ],
 };
@@ -81,31 +74,23 @@ export const projectsContent = {
     {
       key: "1",
       icon: "",
-      title: "Portfolio",
-      link: "https://github.com/vvasileios/Portfolio",
-      description: "The portfolio site that you are currently visiting.",
-      techStack: ["JavaScript", "Vue", "Vuex", "Vue Router", "TailwindCSS"],
-    },
-    {
-      key: "2",
-      icon: "",
       title: "Time-Series Visualization",
       link: "https://github.com/vvasileios/timeseries-visualization",
       description:
         "Created a Vue.js application for visualizing time-series data, featuring interactive line charts and tables. The tool allows users to filter data by date and toggle visibility of different datasets, enhancing the analytical experience. Key functionalities include data representation from JSON datasets, customizable date range filtering, and user-controlled dataset visibility, making it an effective solution for understanding and analyzing time trends.",
-      techStack: ["JavaScript", "Vue", "Vuex", "TailwindCSS"],
+      techStack: ["JavaScript", "Vue", "TailwindCSS"],
     },
     {
-      key: "3",
+      key: "2",
       icon: "",
       title: "Spaceflight News Blog",
       link: "https://github.com/vvasileios/spaceflight-news",
       description:
         "Built a Space-Flight News Blog with a Home page for article previews and a Show page for detailed views, utilizing Vue.js and Vuex. Articles are efficiently managed and dynamically retrieved, ensuring an engaging user experience with direct links to full stories, catering to space-flight enthusiasts.",
-      techStack: ["JavaScript", "Vue", "Vuex", "Vue Router", "TailwindCSS"],
+      techStack: ["JavaScript", "Vue", "TailwindCSS"],
     },
     {
-      key: "4",
+      key: "3",
       icon: "",
       title: "Face Recognition",
       link: "https://github.com/vvasileios/Face-Recognition",
