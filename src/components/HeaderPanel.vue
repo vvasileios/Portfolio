@@ -21,9 +21,9 @@
               :href="`#${section}`"
               @click="updateSelectedSection(section)"
               :class="{
-                'text-slate-200': activeSection === section,
+                'text-slate-200 uppercase': activeSection === section,
               }"
-              class="text-sm uppercase font-medium"
+              class="text-sm font-bold"
             >
               {{ section }}
             </a>
@@ -31,7 +31,7 @@
               :icon="['fas', 'arrow-right']"
               class="ml-3 transition duration-500"
               :class="{
-                'ml-3 transition rotate-180 duration-500 text-slate-200':
+                'transition rotate-180 duration-500 text-slate-200':
                   activeSection === section,
               }"
             />
