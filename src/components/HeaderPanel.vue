@@ -23,21 +23,21 @@
           >
             <a
               :href="`#${section}`"
-              @click="updateSelectedSection(section)"
               :class="{
                 'text-slate-200 uppercase': activeSection === section,
               }"
               class="text-sm font-bold"
+              @click="updateSelectedSection(section)"
             >
               {{ section }}
             </a>
             <font-awesome-icon
               :icon="['fas', 'arrow-right']"
-              class="transition duration-500"
               :class="{
                 'transition rotate-180 duration-500 text-slate-200':
                   activeSection === section,
               }"
+              class="transition duration-500"
             />
           </li>
         </ul>
@@ -47,8 +47,8 @@
     <ul class="ml-3 mt-8 flex items-center">
       <li class="mr-5 shrink-0">
         <a
-          href="https://github.com/vvasileios"
           :class="socialClasses"
+          href="https://github.com/vvasileios"
           aria-label="Github"
         >
           <font-awesome-icon :icon="['fab', 'github']" size="lg" />
@@ -56,8 +56,8 @@
       </li>
       <li class="mr-5 shrink-0">
         <a
-          href="https://www.linkedin.com/in/vasileios-vasileiadis-999405221/"
           :class="socialClasses"
+          href="https://www.linkedin.com/in/vasileios-vasileiadis-999405221/"
           aria-label="LinkedIn"
         >
           <font-awesome-icon :icon="['fab', 'linkedin']" size="lg" />
@@ -65,8 +65,8 @@
       </li>
       <li class="mr-5 shrink-0">
         <a
-          href="https://www.instagram.com/vasilis_vasil/"
           :class="socialClasses"
+          href="https://www.instagram.com/vasilis_vasil/"
           aria-label="Instagram"
         >
           <font-awesome-icon :icon="['fab', 'instagram']" size="lg" />

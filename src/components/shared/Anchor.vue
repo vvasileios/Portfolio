@@ -1,8 +1,8 @@
 <template>
   <a
     :href="link"
-    class="font-medium hover:text-teal-300 focus:text-teal-300"
     :class="[aboutContent ? 'text-slate-200' : 'text-slate-400']"
+    class="font-medium hover:text-teal-300 focus:text-teal-300"
     target="_blank"
     rel="noreferrer noopener"
   >

@@ -18,7 +18,8 @@
 
       , deployed with
 
-      <Anchor :link="''" :text="'Web Hosting'" />. All icons are set through
+      <Anchor :link="'https://top.host/web-hosting.htm'" :text="'Top.Host'" />.
+      All icons are set through
 
       <Anchor :link="'https://fontawesome.com/'" :text="'Font Awesome'" />.
     </p>
