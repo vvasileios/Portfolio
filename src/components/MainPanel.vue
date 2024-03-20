@@ -87,6 +87,7 @@
 </template>
 
 <script>
+import { mapGetters } from "vuex";
 import ContentSection from "./shared/ContentSection.vue";
 import Card from "./shared/Card.vue";
 import Anchor from "./shared/Anchor.vue";
@@ -115,6 +116,31 @@ export default {
       id: "about",
       title: "About",
     };
+  },
+
+  mounted() {
+    window.addEventListener("scroll", this.updateSection);
+  },
+
+  beforeUnmount() {
+    window.removeEventListener("scroll", this.updateSection);
+  },
+
+  methods: {
+    updateSection() {
+      const sections = document.querySelectorAll("section");
+
+      sections.forEach((section) => {
+        let top = window.scrollY;
+        let offset = section.offsetTop - 150;
+        let height = section.offsetHeight;
+        let sectionID = section.getAttribute("id");
+
+        if (top >= offset && top < offset + height) {
+          this.$store.commit("SET_ACTIVE_SECTION", sectionID);
+        }
+      });
+    },
   },
 };
 </script>
