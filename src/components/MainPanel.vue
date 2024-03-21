@@ -121,7 +121,7 @@ export default {
     window.addEventListener("scroll", this.updateSection);
   },
 
-  beforeUnmount() {
+  unmounted() {
     window.removeEventListener("scroll", this.updateSection);
   },
 
@@ -131,11 +131,12 @@ export default {
 
       sections.forEach((section) => {
         let top = window.scrollY;
-        let offset = section.offsetTop - 150;
+        let offset = section.offsetTop - 380;
         let height = section.offsetHeight;
         let sectionID = section.getAttribute("id");
 
         if (top >= offset && top < offset + height) {
+          console.log(top);
           this.$store.commit("SET_ACTIVE_SECTION", sectionID);
         }
       });
