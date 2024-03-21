@@ -43,7 +43,7 @@ export const educationContent = {
       school: "TechPro Academy",
       link: "https://www.techproacademy.gr/",
       description:
-        "Participated in an intensive bootcamp at TechPro Academy, focusing on Full Stack Engineering. The program encompassed both front-end and back-end technologies, equipping participants with comprehensive skills in web development. Engaged in hands-on projects that simulated real-world challenges, fostering a deep understanding of full stack development practices from database management to user interface design. The curriculum was designed to build proficiency in a wide array of programming languages and frameworks, preparing graduates to contribute effectively to any phase of the development lifecycle",
+        "Completed an intensive Full Stack Engineering bootcamp, gaining hands-on experience in both front-end and back-end development technologies, with a focus on real-world application and project-based learning.",
     },
     {
       key: "2",
@@ -52,7 +52,7 @@ export const educationContent = {
       school: "International Hellenic University",
       link: "https://mais.ihu.gr/",
       description:
-        "Achieved a Master of Science in Information Systems, delving into the intricate relationship between technology, organizations, and society. The program offered a diverse curriculum, covering key areas such as Information Systems and Digital Innovation, which explored the transformative role of IT in business processes, and Information Systems Design and Development, focusing on creating robust and scalable systems. Advanced courses like Artificial Intelligence and Recent Advances in Information Systems kept pace with cutting-edge technologies, while Financial Information Systems bridged the gap between IT and financial reporting. Practical skills were honed in Web Programming and Data Analysis and Research Methods, ensuring a balanced blend of theory and application. The program also emphasized strategic decision-making through courses like Decision Support and Management Control Systems, preparing graduates to navigate complex business environments effectively",
+        "Achieved an MSc in Information Systems, focusing on the synergy between technology and business, with key learnings in systems design, web programming, and AI, enhancing capabilities in developing innovative IT solutions.",
     },
     {
       key: "3",
@@ -62,7 +62,7 @@ export const educationContent = {
       school: "Democritus University Of Thrace",
       link: "https://fmenr.duth.gr/",
       description:
-        "Earned an Integrated Master's degree in Forestry & Management of the Environment & Natural Resources, focusing on the sustainable management of forest ecosystems and the stewardship of natural resources. The program provided an in-depth understanding of ecological principles, conservation strategies, and the sustainable use of natural resources. It combined rigorous academic coursework with practical field studies, preparing graduates to tackle global environmental issues. The curriculum covered a broad spectrum of topics, from forest ecology and management to environmental policy and resource economics, ensuring a comprehensive education in managing natural landscapes and resources for future generations.",
+        "Earned an Integrated Master's degree, specializing in sustainable forestry and environmental resource management, gaining insights into ecological conservation and sustainability practices, geared towards addressing global environmental issues.",
     },
   ],
 };
