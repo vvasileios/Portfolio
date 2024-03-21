@@ -12,7 +12,7 @@
 
 <script>
 export default {
-  name: "Anchor",
+  name: "AnchorTag",
 
   props: {
     link: {

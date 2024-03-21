@@ -3,36 +3,38 @@
     <p>
       Created in
 
-      <Anchor
+      <AnchorTag
         :link="'https://code.visualstudio.com/'"
         :text="'Visual Studio Code'"
       />
 
       by yours truly. Built with
 
-      <Anchor :link="'https://vuejs.org/'" :text="'Vue.js'" />
+      <AnchorTag :link="'https://vuejs.org/'" :text="'Vue.js'" />
 
       and
 
-      <Anchor :link="'https://tailwindcss.com/'" :text="'Tailwind CSS'" />
+      <AnchorTag :link="'https://tailwindcss.com/'" :text="'Tailwind CSS'" />
 
       , deployed with
 
-      <Anchor :link="'https://top.host/web-hosting.htm'" :text="'Top.Host'" />.
-      All icons are set through
+      <AnchorTag
+        :link="'https://top.host/web-hosting.htm'"
+        :text="'Top.Host'"
+      />. All icons are set through
 
-      <Anchor :link="'https://fontawesome.com/'" :text="'Font Awesome'" />.
+      <AnchorTag :link="'https://fontawesome.com/'" :text="'Font Awesome'" />.
     </p>
   </footer>
 </template>
 
 <script>
-import Anchor from "./Anchor.vue";
+import AnchorTag from "./AnchorTag.vue";
 export default {
   name: "Footer",
 
   components: {
-    Anchor,
+    AnchorTag,
   },
 };
 </script>

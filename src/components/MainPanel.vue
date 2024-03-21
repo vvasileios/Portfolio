@@ -14,7 +14,7 @@
         <p class="mb-4">
           Since then, I've been fortunate enough to contribute to the tech
           industry, particularly in a
-          <Anchor
+          <AnchorTag
             :link="'https://contractuo.com/'"
             :text="'vibrant start-up environment'"
             :about-content="true"
@@ -51,6 +51,8 @@
           :link="job.link"
           :list="job.techStack"
         />
+
+        <AnchorTag :text="'View Full Resume'" />
       </template>
     </content-section>
 
@@ -79,6 +81,7 @@
           :link="project.link"
           :list="project.techStack"
         />
+        <AnchorTag :text="'View Full Project Archive'" />
       </template>
     </content-section>
 
@@ -89,7 +92,7 @@
 <script>
 import ContentSection from "./shared/ContentSection.vue";
 import Card from "./shared/Card.vue";
-import Anchor from "./shared/Anchor.vue";
+import AnchorTag from "./shared/AnchorTag.vue";
 import Footer from "./shared/Footer.vue";
 import {
   experienceContent,
@@ -104,7 +107,7 @@ export default {
     ContentSection,
     Card,
     Footer,
-    Anchor,
+    AnchorTag,
   },
 
   data() {
@@ -136,7 +139,6 @@ export default {
         let sectionID = section.getAttribute("id");
 
         if (top >= offset && top < offset + height) {
-          console.log(top);
           this.$store.commit("SET_ACTIVE_SECTION", sectionID);
         }
       });
