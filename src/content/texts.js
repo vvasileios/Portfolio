@@ -21,6 +21,15 @@ export const experienceContent = {
   technicalExperience: [
     {
       key: "1",
+      dates: "April 2024 - Present",
+      title: "Junior Software Developer ·",
+      company: "StellarBlue",
+      link: "https://stellarblue.eu/",
+      description: "",
+      techStack: ["JavaScript", "Vue", "Git"],
+    },
+    {
+      key: "2",
       dates: "Aug 2023 - Feb 2024",
       title: "Junior Software Developer ·",
       company: "Contractuo",
@@ -74,6 +83,15 @@ export const projectsContent = {
     {
       key: "1",
       icon: "",
+      title: "Weather Widget",
+      link: "https://github.com/vvasileios/WeatherWidget",
+      description:
+        "Created a Vue.js application designed to provide comprehensive weather information and forecasts. It features a responsive interface that allows users to access real-time weather data, including temperature, humidity, wind speed, and more.The widget offers a forecast feature up to 6 days in advance, complete with a line chart visualization of temperature trends over the week.",
+      techStack: ["JavaScript", "Vue", "TailwindCSS"],
+    },
+    {
+      key: "2",
+      icon: "",
       title: "Time-Series Visualization",
       link: "https://github.com/vvasileios/timeseries-visualization",
       description:
@@ -81,22 +99,13 @@ export const projectsContent = {
       techStack: ["JavaScript", "Vue", "TailwindCSS"],
     },
     {
-      key: "2",
+      key: "3",
       icon: "",
       title: "Spaceflight News Blog",
       link: "https://github.com/vvasileios/spaceflight-news",
       description:
         "Built a Space-Flight News Blog with a Home page for article previews and a Show page for detailed views, utilizing Vue.js and Vuex. Articles are efficiently managed and dynamically retrieved, ensuring an engaging user experience with direct links to full stories, catering to space-flight enthusiasts.",
       techStack: ["JavaScript", "Vue", "TailwindCSS"],
-    },
-    {
-      key: "3",
-      icon: "",
-      title: "Face Recognition",
-      link: "https://github.com/vvasileios/Face-Recognition",
-      description:
-        "Developed a facial recognition web application with user authentication, integrating Clarifai's API. Achieved 95% accuracy in detecting facial features, showcasing the app's effectiveness.",
-      techStack: ["JavaScript", "React", "Node", "Express", "PostgreSQL"],
     },
   ],
 };
