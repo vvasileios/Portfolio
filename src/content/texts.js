@@ -22,7 +22,7 @@ export const experienceContent = {
     {
       key: "1",
       dates: "April 2024 - Present",
-      title: "Junior Software Developer ·",
+      title: "Software Developer ·",
       company: "StellarBlue",
       link: "https://stellarblue.eu/",
       description: "",
@@ -31,11 +31,11 @@ export const experienceContent = {
     {
       key: "2",
       dates: "Aug 2023 - Feb 2024",
-      title: "Junior Software Developer ·",
+      title: "Software Developer ·",
       company: "Contractuo",
       link: "https://contractuo.com/",
       description:
-        "Developed, maintained, and shipped in production front-end code for the document management system using the Vue.js ecosystem. Applied OOP principles and the JavaScript Selection API to engineer an advanced application editor. Translated complex Figma designs into precise, functional code, ensuring consistency and high fidelity. Collaborated in an Agile environment, adapting efficiently to evolving project requirements, contributing to the timely delivery of high-quality solutions.",
+        "Developed, maintained, and shipped in production, front-end code for the document management system using the Vue.js ecosystem. Applied OOP principles and the JavaScript Selection API to engineer an advanced application editor. Collaborated in an Agile environment, adapting efficiently to evolving project requirements, contributing to the timely delivery of high-quality solutions.",
       techStack: ["JavaScript", "Vue", "TailwindCSS", "Git"],
     },
   ],
