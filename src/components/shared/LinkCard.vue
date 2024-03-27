@@ -24,7 +24,7 @@
 
         <font-awesome-icon
           :icon="['fa', 'link']"
-          class="pl-2 group-hover:-translate-y-0.5 group-hover:transition group-hover:rotate-45 group-hover:duration-500"
+          class="pl-2 group-hover:text-teal-300 group-hover:-translate-y-0.5 group-hover:transition group-hover:rotate-45 group-hover:duration-500"
           size="sm"
         />
       </h3>
