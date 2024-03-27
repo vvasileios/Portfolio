@@ -24,7 +24,7 @@
             <a
               :href="`#${section}`"
               :class="{
-                'text-slate-200 uppercase': activeSection === section,
+                'text-teal-300 uppercase': activeSection === section,
               }"
               class="text-sm font-bold"
               @click="updateSelectedSection(section)"
@@ -34,7 +34,7 @@
             <font-awesome-icon
               :icon="['fas', 'arrow-right']"
               :class="{
-                'transition rotate-180 duration-500 text-slate-200':
+                'transition rotate-180 duration-500 text-teal-300':
                   activeSection === section,
               }"
               class="transition duration-500"
