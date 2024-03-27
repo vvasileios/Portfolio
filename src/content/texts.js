@@ -48,7 +48,7 @@ export const educationContent = {
     {
       key: "1",
       dates: "Mar 2024 - Present",
-      title: "Full-stack Engineering Stream ·",
+      title: "Full-stack Engineering ·",
       school: "TechPro Academy",
       link: "https://www.techproacademy.gr/",
       description:
@@ -58,7 +58,7 @@ export const educationContent = {
       key: "2",
       dates: "Oct 2022 - Present",
       title: "MSc, Information Systems ·",
-      school: "International Hellenic University",
+      school: "IHU",
       link: "https://mais.ihu.gr/",
       description:
         "Achieved an MSc in Information Systems, focusing on the synergy between technology and business, with key learnings in systems design, web programming, and AI, enhancing capabilities in developing innovative IT solutions.",
@@ -68,7 +68,7 @@ export const educationContent = {
       dates: "Oct 2013 - Jan 2021",
       title:
         "IM, Forestry & Management of the Environment & Natural Resources ·",
-      school: "Democritus University Of Thrace",
+      school: "DUTH",
       link: "https://fmenr.duth.gr/",
       description:
         "Earned an Integrated Master's degree, specializing in sustainable forestry and environmental resource management, gaining insights into ecological conservation and sustainability practices, geared towards addressing global environmental issues.",
