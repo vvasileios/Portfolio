@@ -41,7 +41,7 @@
       :title="experienceContent.title"
     >
       <template #content>
-        <Card
+        <LinkCard
           v-for="job in experienceContent.technicalExperience"
           :key="job.key"
           :dates="job.dates"
@@ -58,7 +58,7 @@
 
     <content-section :id="educationContent.id" :title="educationContent.title">
       <template #content>
-        <Card
+        <LinkCard
           v-for="school in educationContent.schools"
           :key="school.key"
           :dates="school.dates"
@@ -72,7 +72,7 @@
 
     <content-section :id="projectsContent.id" :title="projectsContent.title">
       <template #content>
-        <Card
+        <LinkCard
           v-for="project in projectsContent.projects"
           :key="project.key"
           :icon="project.icon"
@@ -91,7 +91,7 @@
 
 <script>
 import ContentSection from "./shared/ContentSection.vue";
-import Card from "./shared/Card.vue";
+import LinkCard from "./shared/LinkCard.vue";
 import AnchorTag from "./shared/AnchorTag.vue";
 import Footer from "./shared/Footer.vue";
 import {
@@ -105,7 +105,7 @@ export default {
 
   components: {
     ContentSection,
-    Card,
+    LinkCard,
     Footer,
     AnchorTag,
   },

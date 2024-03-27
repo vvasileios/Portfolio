@@ -44,7 +44,7 @@
 <script>
 import Pill from "./Pill.vue";
 export default {
-  name: "Card",
+  name: "LinkCard",
 
   components: {
     Pill,
