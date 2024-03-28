@@ -8,23 +8,24 @@
           decisive shift was fueled by a blend of self-directed learning and a
           rigorous Master of Science in Information Systems, which together
           plunged me into the exhilarating world of coding and web development.
-          My journey was not just a change of profession, but a leap into a
-          passion that continues to grow each day.
         </p>
         <p class="mb-4">
           Since then, I've been fortunate enough to contribute to the tech
-          industry, particularly in a
+          industry in a
           <AnchorTag
             :link="'https://contractuo.com/'"
             :text="'vibrant start-up environment'"
-            :about-content="true"
-          />. My experiences have not only sharpened my technical skills but
-          have also allowed me to immerse myself in the art of creating
-          pixel-perfect, engaging, and accessible digital experiences. My
-          dedication lies in crafting software that excels both in aesthetics
-          and performance, ensuring an optimal balance between visual appeal and
-          efficiency. This commitment to growth is what drives my continuous
-          quest for knowledge in this ever-evolving field.
+            about-content
+          />, where I began honing my skills and gaining valuable experience.
+          Currently, I'm part of a
+          <AnchorTag
+            :link="'https://stellarblue.eu/'"
+            :text="'forward-thinking startup'"
+            about-content
+          />
+          in the energy software sector, where I continuously learn and improve
+          my knowledge and teamwork, contributing to innovative and sustainable
+          technology solutions.
         </p>
         <p class="mb-4">
           Beyond the screen, I find balance in exercise, delving into books,
