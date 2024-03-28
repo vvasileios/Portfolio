@@ -2,11 +2,17 @@
   <a
     :href="link"
     :class="[aboutContent ? 'text-slate-200' : 'text-slate-400']"
-    class="font-medium hover:text-teal-300 focus:text-teal-300"
+    class="group font-medium hover:text-teal-300 focus:text-teal-300"
     target="_blank"
     rel="noreferrer noopener"
   >
     {{ text }}
+    <font-awesome-icon
+      v-if="isLink"
+      :icon="['fas', 'arrow-right']"
+      class="ml-2 transition-transform transform group-hover:translate-x-2 ease-in-out"
+      size="sm"
+    />
   </a>
 </template>
 
@@ -26,6 +32,11 @@ export default {
     },
 
     aboutContent: {
+      type: Boolean,
+      default: false,
+    },
+
+    isLink: {
       type: Boolean,
       default: false,
     },
