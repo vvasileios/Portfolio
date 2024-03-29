@@ -3,7 +3,7 @@
     :href="link"
     :class="[
       aboutContent ? 'text-slate-200' : 'text-slate-400',
-      isLink ? 'text-slate-100' : '',
+      isLink ? 'text-slate-50' : '',
       'group font-medium hover:text-teal-300 focus:text-teal-300',
     ]"
     target="_blank"
