@@ -15,7 +15,7 @@ import HeaderPanel from "@/components/HeaderPanel.vue";
 import MainPanel from "@/components/MainPanel.vue";
 
 export default {
-  name: "Home",
+  name: "PortfolioPage",
 
   components: {
     HeaderPanel,

@@ -53,7 +53,7 @@
           :list="job.techStack"
         />
 
-        <AnchorTag :text="'View Full Résumé'" is-link />
+        <AnchorTag :text="'View Full Résumé'" is-next-page />
       </template>
     </content-section>
 
@@ -82,7 +82,7 @@
           :link="project.link"
           :list="project.techStack"
         />
-        <AnchorTag :text="'View Full Project Archive'" is-link />
+        <AnchorTag :text="'View Full Project Archive'" is-next-page />
       </template>
     </content-section>
 
