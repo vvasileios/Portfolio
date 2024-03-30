@@ -3,38 +3,42 @@
     <p>
       Created in
 
-      <AnchorTag
+      <ExternalLink
         :link="'https://code.visualstudio.com/'"
         :text="'Visual Studio Code'"
       />
 
       by yours truly. Built with
 
-      <AnchorTag :link="'https://vuejs.org/'" :text="'Vue.js'" />
+      <ExternalLink :link="'https://vuejs.org/'" :text="'Vue.js'" />
 
       and
 
-      <AnchorTag :link="'https://tailwindcss.com/'" :text="'Tailwind CSS'" />
+      <ExternalLink :link="'https://tailwindcss.com/'" :text="'Tailwind CSS'" />
 
       , deployed with
 
-      <AnchorTag
+      <ExternalLink
         :link="'https://top.host/web-hosting.htm'"
         :text="'Top.Host'"
       />. All icons are set through
 
-      <AnchorTag :link="'https://fontawesome.com/'" :text="'Font Awesome'" />.
+      <ExternalLink
+        :link="'https://fontawesome.com/'"
+        :text="'Font Awesome'"
+      />.
     </p>
   </footer>
 </template>
 
 <script>
-import AnchorTag from "./AnchorTag.vue";
+import ExternalLink from "./shared/ExternalLink.vue";
+
 export default {
   name: "Footer",
 
   components: {
-    AnchorTag,
+    ExternalLink,
   },
 };
 </script>

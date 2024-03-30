@@ -12,13 +12,13 @@
         <p class="mb-4">
           Since then, I've been fortunate enough to contribute to the tech
           industry in a
-          <AnchorTag
+          <ExternalLink
             :link="'https://contractuo.com/'"
             :text="'vibrant start-up environment'"
             about-content
           />, where I began honing my skills and gaining valuable experience.
           Currently, I'm part of a
-          <AnchorTag
+          <ExternalLink
             :link="'https://stellarblue.eu/'"
             :text="'forward-thinking startup'"
             about-content
@@ -53,7 +53,7 @@
           :list="job.techStack"
         />
 
-        <AnchorTag :text="'View Full Résumé'" is-next-page />
+        <InternalLink :text="'View Full Résumé'" />
       </template>
     </content-section>
 
@@ -82,7 +82,7 @@
           :link="project.link"
           :list="project.techStack"
         />
-        <AnchorTag :text="'View Full Project Archive'" is-next-page />
+        <InternalLink :text="'View Full Project Archive'" />
       </template>
     </content-section>
 
@@ -93,8 +93,9 @@
 <script>
 import ContentSection from "./shared/ContentSection.vue";
 import LinkCard from "./shared/LinkCard.vue";
-import AnchorTag from "./shared/AnchorTag.vue";
-import Footer from "./shared/Footer.vue";
+import ExternalLink from "./shared/ExternalLink.vue";
+import InternalLink from "./shared/InternalLink.vue";
+import Footer from "./Footer.vue";
 import {
   experienceContent,
   educationContent,
@@ -108,7 +109,8 @@ export default {
     ContentSection,
     LinkCard,
     Footer,
-    AnchorTag,
+    ExternalLink,
+    InternalLink,
   },
 
   data() {
