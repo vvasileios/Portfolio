@@ -1,7 +1,7 @@
 <template>
   <button
-    @click="navigate"
     class="group font-medium text-slate-100 hover:text-teal-300 focus:text-teal-300"
+    @click="navigate"
   >
     {{ text }}
     <font-awesome-icon
@@ -20,6 +20,17 @@ export default {
     text: {
       type: String,
       default: "",
+    },
+
+    to: {
+      type: String,
+      default: "",
+    },
+  },
+
+  methods: {
+    navigate() {
+      this.$router.push(this.to);
     },
   },
 };

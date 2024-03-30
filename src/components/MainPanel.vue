@@ -53,7 +53,7 @@
           :list="job.techStack"
         />
 
-        <InternalLink :text="'View Full Résumé'" />
+        <InternalLink :text="'View Full Résumé'" :to="'/resume'" />
       </template>
     </content-section>
 
