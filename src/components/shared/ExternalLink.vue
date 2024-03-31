@@ -2,8 +2,10 @@
   <a
     :href="link"
     :class="[
-      aboutContent ? 'text-slate-200' : 'text-slate-400',
-      'group font-medium hover:text-teal-300 focus:text-teal-300',
+      aboutContent
+        ? 'text-slate-200 focus:text-slate-200'
+        : 'text-slate-400 focus:text-slate-400',
+      'group font-medium hover:text-teal-300 ',
     ]"
     target="_blank"
     rel="noreferrer noopener"

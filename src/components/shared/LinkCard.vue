@@ -18,13 +18,13 @@
 
     <div class="col-span-5">
       <h3
-        class="font-medium leading-snug text-slate-200 group-hover:text-teal-300 group-focus:text-teal-300 transition-colors duration-300"
+        class="font-medium leading-snug text-slate-200 group-hover:text-teal-300 group-focus:text-slate-300 transition-colors duration-300"
       >
         {{ title }} {{ company }}
 
         <font-awesome-icon
           :icon="['fa', 'link']"
-          class="pl-2 group-hover:text-teal-300 group-hover:-translate-y-0.5 group-hover:transition group-hover:rotate-45 group-hover:duration-500"
+          class="pl-2 group-hover:text-teal-300 group-focus:text-slate-300 group-hover:-translate-y-0.5 group-hover:transition group-hover:rotate-45 group-hover:duration-500"
           size="sm"
         />
       </h3>
