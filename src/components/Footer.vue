@@ -21,12 +21,17 @@
       <ExternalLink
         :link="'https://top.host/web-hosting.htm'"
         :text="'Top.Host'"
-      />. All icons are set through
+      />. Icons are set through
 
       <ExternalLink
         :link="'https://fontawesome.com/'"
         :text="'Font Awesome'"
-      />.
+      />, and favicon created with
+
+      <ExternalLink
+        :link="'https://favicon.io/favicon-generator/'"
+        :text="'Favicon.io.'"
+      />
     </p>
   </footer>
 </template>
