@@ -26,11 +26,20 @@ export default {
       type: String,
       default: "",
     },
+
+    path: {
+      type: String,
+      default: "",
+    },
   },
 
   methods: {
     navigate() {
-      this.$router.push(this.to);
+      if (this.path) {
+        window.open(this.path, "_blank");
+      } else if (this.to) {
+        this.$router.push(this.to);
+      }
     },
   },
 };

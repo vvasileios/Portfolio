@@ -8,7 +8,7 @@ export default {
 
   data() {
     return {
-      pdfUrl: "/src/assets/dummy.pdf",
+      pdfUrl: "http://localhost:5173/dummy.pdf",
       baseViewerUrl: "https://docs.google.com/viewer?url=",
     };
   },
