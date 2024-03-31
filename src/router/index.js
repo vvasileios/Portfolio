@@ -9,11 +9,6 @@ const router = createRouter({
       name: "Portfolio",
       component: PortfolioPage,
     },
-    {
-      path: "/resume",
-      name: "Resume",
-      component: () => import("../pages/ResumeViewer.vue"),
-    },
   ],
 });
 
