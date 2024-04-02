@@ -30,9 +30,7 @@
         <p class="mb-4">
           Beyond the screen, I find balance in exercise, delving into books,
           enjoying quality time with my girlfriend, and embracing the simple joy
-          of long walks. These moments away from the keyboard are crucial,
-          providing fresh perspectives and inspiration that fuel my professional
-          journey.
+          of long walks.
         </p>
       </template>
     </content-section>

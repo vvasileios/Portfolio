@@ -5,16 +5,6 @@ export const headerContent = {
     "Crafting engaging digital experiences through code and continuous learning.",
 };
 
-// export const aboutContent = {
-//   id: "about",
-//   title: "About",
-//   paragraphs: [
-//     "In early 2022, I embarked on a transformative journey, pivoting my career towards the dynamic realm of software development. This decisive shift was fueled by a blend of self-directed learning and a rigorous Master of Science in Information Systems, which together plunged me into the exhilarating world of coding and web development. My journey was not just a change of profession, but a leap into a passion that continues to grow each day.",
-//     "Since then, I've been fortunate enough to contribute to the tech industry, particularly in a vibrant start-up environment. My experiences have not only sharpened my technical skills but have also allowed me to immerse myself in the art of creating pixel-perfect, engaging, and accessible digital experiences. My dedication lies in crafting software that excels both in aesthetics and performance, ensuring an optimal balance between visual appeal and efficiency. This commitment to growth is what drives my continuous quest for knowledge in this ever-evolving field.",
-//     "Beyond the screen, I find balance in exercise, delving into books, enjoying quality time with my girlfriend, and embracing the simple joy of long walks. These moments away from the keyboard are crucial, providing fresh perspectives and inspiration that fuel my professional journey.",
-//   ],
-// };
-
 export const experienceContent = {
   id: "experience",
   title: "Experience",
@@ -26,7 +16,7 @@ export const experienceContent = {
       company: "StellarBlue",
       link: "https://stellarblue.eu/",
       description: "",
-      techStack: ["JavaScript", "Vue", "Git"],
+      techStack: ["JavaScript", "Vue", "Git", "C#"],
     },
     {
       key: "2",
