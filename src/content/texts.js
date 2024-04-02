@@ -16,7 +16,7 @@ export const experienceContent = {
       company: "StellarBlue",
       link: "https://stellarblue.eu/",
       description: "",
-      techStack: ["JavaScript", "Vue", "Git", "C#"],
+      techStack: ["JavaScript", "Vue", "Bootstrap", "C#", "Git", "HTML/CSS"],
     },
     {
       key: "2",
@@ -26,7 +26,7 @@ export const experienceContent = {
       link: "https://contractuo.com/",
       description:
         "Developed, maintained, and shipped in production, front-end code for the document management system using the Vue.js ecosystem. Applied OOP principles and the JavaScript Selection API to engineer an advanced application editor. Collaborated in an Agile environment, adapting efficiently to evolving project requirements, contributing to the timely delivery of high-quality solutions.",
-      techStack: ["JavaScript", "Vue", "TailwindCSS", "Git"],
+      techStack: ["JavaScript", "Vue", "TailwindCSS", "Git", "HTML/CSS"],
     },
   ],
 };
