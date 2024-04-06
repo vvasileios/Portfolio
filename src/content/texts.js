@@ -38,11 +38,11 @@ export const educationContent = {
     {
       key: "1",
       dates: "Mar 2024 - Present",
-      title: "Full-stack Engineering ·",
+      title: "Back-end Engineering ·",
       school: "TechPro Academy",
       link: "https://www.techproacademy.gr/",
       description:
-        "Completed an intensive Full Stack Engineering bootcamp, gaining hands-on experience in both front-end and back-end development technologies, with a focus on real-world application and project-based learning.",
+        "Completed an intensive Back-end Engineering bootcamp, gaining hands-on experience in back-end development technologies, with a focus on real-world application and project-based learning.",
     },
     {
       key: "2",
