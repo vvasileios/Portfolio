@@ -58,6 +58,7 @@
           <li class="mx-2 border-2 border-red-500">SpringBoot</li>
           <li class="mx-2 border-2 border-red-500">SQL</li>
           <li class="mx-2 border-2 border-red-500">PHP</li>
+          <li class="mx-2 border-2 border-red-500">Node</li>
           <li class="mx-2 border-2 border-red-500">Express</li>
           <li class="mx-2 border-2 border-red-500">HTML</li>
           <li class="mx-2 border-2 border-red-500">CSS</li>
