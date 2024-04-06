@@ -42,6 +42,27 @@
           </li>
         </ul>
       </nav>
+
+      <div class="bg-white">
+        <ul class="mt-16 ml-2 flex flex-row flex-wrap">
+          <li class="mx-2 border-2 border-red-500">Javascript</li>
+          <li class="mx-2 border-2 border-red-500">Typescript</li>
+          <li class="mx-2 border-2 border-red-500">Vue</li>
+          <li class="mx-2 border-2 border-red-500">Tailwind</li>
+          <li class="mx-2 border-2 border-red-500">Bootstrap</li>
+          <li class="mx-2 border-2 border-red-500">Git</li>
+          <li class="mx-2 border-2 border-red-500">Terminal</li>
+          <li class="mx-2 border-2 border-red-500">WordPress</li>
+          <li class="mx-2 border-2 border-red-500">C#</li>
+          <li class="mx-2 border-2 border-red-500">Java</li>
+          <li class="mx-2 border-2 border-red-500">SpringBoot</li>
+          <li class="mx-2 border-2 border-red-500">SQL</li>
+          <li class="mx-2 border-2 border-red-500">PHP</li>
+          <li class="mx-2 border-2 border-red-500">Express</li>
+          <li class="mx-2 border-2 border-red-500">HTML</li>
+          <li class="mx-2 border-2 border-red-500">CSS</li>
+        </ul>
+      </div>
     </div>
 
     <ul class="ml-3 mt-8 flex items-center">
