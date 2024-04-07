@@ -43,25 +43,52 @@
         </ul>
       </nav>
 
-      <div class="bg-white">
-        <ul class="mt-16 ml-2 flex flex-row flex-wrap">
-          <li class="mx-2 border-2 border-red-500">Javascript</li>
-          <li class="mx-2 border-2 border-red-500">Typescript</li>
-          <li class="mx-2 border-2 border-red-500">Vue</li>
-          <li class="mx-2 border-2 border-red-500">Tailwind</li>
-          <li class="mx-2 border-2 border-red-500">Bootstrap</li>
-          <li class="mx-2 border-2 border-red-500">Git</li>
-          <li class="mx-2 border-2 border-red-500">Terminal</li>
-          <li class="mx-2 border-2 border-red-500">WordPress</li>
-          <li class="mx-2 border-2 border-red-500">C#</li>
-          <li class="mx-2 border-2 border-red-500">Java</li>
-          <li class="mx-2 border-2 border-red-500">SpringBoot</li>
-          <li class="mx-2 border-2 border-red-500">SQL</li>
-          <li class="mx-2 border-2 border-red-500">PHP</li>
-          <li class="mx-2 border-2 border-red-500">Node</li>
-          <li class="mx-2 border-2 border-red-500">Express</li>
-          <li class="mx-2 border-2 border-red-500">HTML</li>
-          <li class="mx-2 border-2 border-red-500">CSS</li>
+      <div class="">
+        <ul class="mt-16 flex flex-row flex-wrap">
+          <li class="mx-3 hover:text-teal-300">
+            <font-awesome-icon :icon="['fa-brands', 'fa-js']" size="xl" />
+          </li>
+          <li class="mx-3 hover:text-teal-300">
+            <font-awesome-icon :icon="['fa-brands', 'fa-vuejs']" size="xl" />
+          </li>
+          <li class="mx-3 hover:text-teal-300">
+            <font-awesome-icon
+              :icon="['fa-brands', 'fa-bootstrap']"
+              size="xl"
+            />
+          </li>
+          <li class="mx-3 hover:text-teal-300">
+            <font-awesome-icon :icon="['fa-brands', 'fa-git']" size="xl" />
+          </li>
+          <li class="mx-3 hover:text-teal-300">
+            <font-awesome-icon
+              :icon="['fa-brands', 'fa-wordpress']"
+              size="xl"
+            />
+          </li>
+          <li class="mx-3 hover:text-teal-300">
+            <font-awesome-icon :icon="['fa-brands', 'fa-java']" size="xl" />
+          </li>
+          <li class="mx-3 hover:text-teal-300">
+            <font-awesome-icon :icon="['fa-solid', 'fa-database']" size="xl" />
+          </li>
+          <li class="mx-3 hover:text-teal-300">
+            <font-awesome-icon :icon="['fa-brands', 'fa-php']" size="xl" />
+          </li>
+          <li class="mx-3 hover:text-teal-300">
+            <font-awesome-icon :icon="['fa-brands', 'fa-node']" size="xl" />
+          </li>
+          <li class="mx-3 hover:text-teal-300">
+            <font-awesome-icon :icon="['fa-brands', 'fa-html5']" size="xl" />
+          </li>
+          <li class="mx-3 hover:text-teal-300">
+            <font-awesome-icon :icon="['fa-brands', 'fa-css-alt']" size="xl" />
+          </li>
+          <!-- <li class="mx-2">C#</li> -->
+          <!-- <li class="mx-2">Express</li> -->
+          <!-- <li class="mx-2">SpringBoot</li> -->
+          <!-- <li class="mx-2">Tailwind</li> -->
+          <!-- <li class="mx-2">Typescript</li> -->
         </ul>
       </div>
     </div>
