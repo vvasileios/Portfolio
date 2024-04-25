@@ -32,7 +32,7 @@ const navigate = (path) => {
 <template>
   <button
     class="group font-medium text-slate-100 hover:text-teal-300 focus:text-slate-100"
-    @click="navigate"
+    @click="navigate(path)"
   >
     {{ text }}
     <font-awesome-icon
