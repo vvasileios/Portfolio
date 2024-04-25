@@ -1,3 +1,7 @@
+<script setup>
+import ExternalLink from "./shared/ExternalLink.vue";
+</script>
+
 <template>
   <footer class="max-w-lg pb-16 text-sm text-slate-500 sm:pb-0">
     <p>
@@ -35,15 +39,3 @@
     </p>
   </footer>
 </template>
-
-<script>
-import ExternalLink from "./shared/ExternalLink.vue";
-
-export default {
-  name: "Footer",
-
-  components: {
-    ExternalLink,
-  },
-};
-</script>

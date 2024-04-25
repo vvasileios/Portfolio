@@ -1,3 +1,22 @@
+<script setup>
+defineProps({
+  link: {
+    type: String,
+    default: "",
+  },
+
+  text: {
+    type: String,
+    default: "",
+  },
+
+  aboutContent: {
+    type: Boolean,
+    default: false,
+  },
+});
+</script>
+
 <template>
   <a
     :href="link"
@@ -13,26 +32,3 @@
     {{ text }}
   </a>
 </template>
-
-<script>
-export default {
-  name: "ExternalLink",
-
-  props: {
-    link: {
-      type: String,
-      default: "",
-    },
-
-    text: {
-      type: String,
-      default: "",
-    },
-
-    aboutContent: {
-      type: Boolean,
-      default: false,
-    },
-  },
-};
-</script>

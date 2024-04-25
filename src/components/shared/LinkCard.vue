@@ -1,3 +1,44 @@
+<script setup>
+import Pill from "./Pill.vue";
+
+defineProps({
+  icon: {
+    type: String,
+    default: "",
+  },
+
+  dates: {
+    type: String,
+    default: "",
+  },
+
+  title: {
+    type: String,
+    default: "",
+  },
+
+  company: {
+    type: String,
+    default: "",
+  },
+
+  description: {
+    type: String,
+    default: "",
+  },
+
+  link: {
+    type: String,
+    default: "",
+  },
+
+  list: {
+    type: Array,
+    default: () => [],
+  },
+});
+</script>
+
 <template>
   <a
     :href="link"
@@ -40,51 +81,3 @@
     </div>
   </a>
 </template>
-
-<script>
-import Pill from "./Pill.vue";
-export default {
-  name: "LinkCard",
-
-  components: {
-    Pill,
-  },
-
-  props: {
-    icon: {
-      type: String,
-      default: "",
-    },
-
-    dates: {
-      type: String,
-      default: "",
-    },
-
-    title: {
-      type: String,
-      default: "",
-    },
-
-    company: {
-      type: String,
-      default: "",
-    },
-
-    description: {
-      type: String,
-      default: "",
-    },
-
-    link: {
-      type: String,
-      default: "",
-    },
-
-    list: {
-      type: Array,
-      default: () => [],
-    },
-  },
-};
-</script>

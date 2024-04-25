@@ -1,6 +1,48 @@
+<script setup>
+import { onMounted, onUnmounted, ref } from "vue";
+import { useStore } from "vuex";
+import ContentSection from "./shared/ContentSection.vue";
+import LinkCard from "./shared/LinkCard.vue";
+import ExternalLink from "./shared/ExternalLink.vue";
+import InternalLink from "./shared/InternalLink.vue";
+import Footer from "./Footer.vue";
+import {
+  experienceContent,
+  educationContent,
+  projectsContent,
+} from "@/content/texts.js";
+
+const store = useStore();
+
+const experienceContentRef = ref(experienceContent);
+const educationContentRef = ref(educationContent);
+const projectsContentRef = ref(projectsContent);
+const id = "about";
+const title = "About";
+
+const updateSection = () => {
+  const sections = document.querySelectorAll("section");
+
+  sections.forEach((section) => {
+    let top = window.scrollY;
+    let offset = section.offsetTop - 380;
+    let height = section.offsetHeight;
+    let sectionID = section.getAttribute("id");
+
+    if (top >= offset && top < offset + height) {
+      store.commit("SET_ACTIVE_SECTION", sectionID);
+    }
+  });
+};
+
+onMounted(() => window.addEventListener("scroll", updateSection));
+
+onUnmounted(() => window.removeEventListener("scroll", updateSection));
+</script>
+
 <template>
   <main class="pt-24 lg:w-1/2 lg:py-24">
-    <content-section :id="this.id" :title="this.title">
+    <content-section :id="id" :title="title">
       <template #content>
         <p class="mb-4">
           In early 2022, I embarked on a transformative journey, pivoting my
@@ -36,12 +78,12 @@
     </content-section>
 
     <content-section
-      :id="experienceContent.id"
-      :title="experienceContent.title"
+      :id="experienceContentRef.id"
+      :title="experienceContentRef.title"
     >
       <template #content>
         <LinkCard
-          v-for="job in experienceContent.technicalExperience"
+          v-for="job in experienceContentRef.technicalExperience"
           :key="job.key"
           :dates="job.dates"
           :title="job.title"
@@ -55,10 +97,13 @@
       </template>
     </content-section>
 
-    <content-section :id="educationContent.id" :title="educationContent.title">
+    <content-section
+      :id="educationContentRef.id"
+      :title="educationContentRef.title"
+    >
       <template #content>
         <LinkCard
-          v-for="school in educationContent.schools"
+          v-for="school in educationContentRef.schools"
           :key="school.key"
           :dates="school.dates"
           :title="school.title"
@@ -69,10 +114,13 @@
       </template>
     </content-section>
 
-    <content-section :id="projectsContent.id" :title="projectsContent.title">
+    <content-section
+      :id="projectsContentRef.id"
+      :title="projectsContentRef.title"
+    >
       <template #content>
         <LinkCard
-          v-for="project in projectsContent.projects"
+          v-for="project in projectsContentRef.projects"
           :key="project.key"
           :icon="project.icon"
           :title="project.title"
@@ -87,63 +135,3 @@
     <Footer />
   </main>
 </template>
-
-<script>
-import ContentSection from "./shared/ContentSection.vue";
-import LinkCard from "./shared/LinkCard.vue";
-import ExternalLink from "./shared/ExternalLink.vue";
-import InternalLink from "./shared/InternalLink.vue";
-import Footer from "./Footer.vue";
-import {
-  experienceContent,
-  educationContent,
-  projectsContent,
-} from "@/content/texts.js";
-
-export default {
-  name: "MainPanel",
-
-  components: {
-    ContentSection,
-    LinkCard,
-    Footer,
-    ExternalLink,
-    InternalLink,
-  },
-
-  data() {
-    return {
-      experienceContent,
-      educationContent,
-      projectsContent,
-      id: "about",
-      title: "About",
-    };
-  },
-
-  mounted() {
-    window.addEventListener("scroll", this.updateSection);
-  },
-
-  unmounted() {
-    window.removeEventListener("scroll", this.updateSection);
-  },
-
-  methods: {
-    updateSection() {
-      const sections = document.querySelectorAll("section");
-
-      sections.forEach((section) => {
-        let top = window.scrollY;
-        let offset = section.offsetTop - 380;
-        let height = section.offsetHeight;
-        let sectionID = section.getAttribute("id");
-
-        if (top >= offset && top < offset + height) {
-          this.$store.commit("SET_ACTIVE_SECTION", sectionID);
-        }
-      });
-    },
-  },
-};
-</script>

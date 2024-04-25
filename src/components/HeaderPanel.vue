@@ -1,18 +1,35 @@
+<script setup>
+import { ref, computed } from "vue";
+import { useStore } from "vuex";
+import { headerContent } from "@/content/texts";
+
+const store = useStore();
+
+const headerContentRef = ref(headerContent);
+const socialClasses = ref("hover:text-teal-300 focus:text-teal-300");
+const sections = ref(["about", "experience", "education", "projects"]);
+
+const activeSection = computed(() => store.getters.getActiveSection);
+
+const updateSelectedSection = (section) =>
+  store.dispatch("updateActiveSection", section);
+</script>
+
 <template>
   <header
     class="lg:sticky lg:top-0 lg:flex lg:h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24"
   >
     <div>
       <h1 class="text-4xl text-slate-200 font-bold tracking-tight sm:text-5xl">
-        {{ headerContent.name }}
+        {{ headerContentRef.name }}
       </h1>
       <h2
         class="mt-3 ml-2 text-lg text-slate-200 font-medium tracking-tight sm:text-xl"
       >
-        {{ headerContent.role }}
+        {{ headerContentRef.role }}
       </h2>
       <p class="mt-4 ml-2 max-w-xs leading-normal">
-        {{ headerContent.intro }}
+        {{ headerContentRef.intro }}
       </p>
       <nav class="nav hidden lg:block">
         <ul class="mt-16 ml-2 w-max">
@@ -124,30 +141,3 @@
     </ul>
   </header>
 </template>
-
-<script>
-import { headerContent } from "@/content/texts";
-import { mapGetters } from "vuex";
-
-export default {
-  data() {
-    return {
-      headerContent,
-      socialClasses: "hover:text-teal-300 focus:text-teal-300",
-      sections: ["about", "experience", "education", "projects"],
-    };
-  },
-
-  computed: {
-    ...mapGetters({
-      activeSection: "getActiveSection",
-    }),
-  },
-
-  methods: {
-    updateSelectedSection(section) {
-      this.$store.dispatch("updateActiveSection", section);
-    },
-  },
-};
-</script>
