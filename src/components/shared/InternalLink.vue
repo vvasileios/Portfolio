@@ -20,10 +20,10 @@ defineProps({
   },
 });
 
-const navigate = (path) => {
+const navigate = (path, to) => {
   if (path) {
     window.open(path, "_blank");
-  } else {
+  } else if (to) {
     router.push(to);
   }
 };
@@ -32,7 +32,7 @@ const navigate = (path) => {
 <template>
   <button
     class="group font-medium text-slate-100 hover:text-teal-300 focus:text-slate-100"
-    @click="navigate(path)"
+    @click="navigate(path, to)"
   >
     {{ text }}
     <font-awesome-icon
