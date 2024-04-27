@@ -139,7 +139,7 @@ onUnmounted(() => window.removeEventListener("scroll", updateSection));
           :list="project.techStack"
         />
 
-        <SharedButton :text="'View Full Project Archive'" @click="changePage" />
+        <SharedButton :text="'View Project Archive'" @click="changePage" />
       </template>
     </content-section>
 
