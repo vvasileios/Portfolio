@@ -1,5 +1,5 @@
 <script setup>
-import ExternalLink from "./shared/ExternalLink.vue";
+import AnchorTag from "./shared/AnchorTag.vue";
 </script>
 
 <template>
@@ -7,32 +7,30 @@ import ExternalLink from "./shared/ExternalLink.vue";
     <p>
       Created in
 
-      <ExternalLink
+      <AnchorTag
         :link="'https://code.visualstudio.com/'"
         :text="'Visual Studio Code'"
       />
 
       by yours truly. Built with
 
-      <ExternalLink :link="'https://vuejs.org/'" :text="'Vue.js'" />
+      <AnchorTag :link="'https://vuejs.org/'" :text="'Vue.js'" />
 
       and
 
-      <ExternalLink :link="'https://tailwindcss.com/'" :text="'Tailwind CSS'" />
+      <AnchorTag :link="'https://tailwindcss.com/'" :text="'Tailwind CSS'" />
 
       , deployed with
 
-      <ExternalLink
+      <AnchorTag
         :link="'https://top.host/web-hosting.htm'"
         :text="'Top.Host'"
       />. Icons are set through
 
-      <ExternalLink
-        :link="'https://fontawesome.com/'"
-        :text="'Font Awesome'"
-      />, and favicon created with
+      <AnchorTag :link="'https://fontawesome.com/'" :text="'Font Awesome'" />,
+      and favicon created with
 
-      <ExternalLink
+      <AnchorTag
         :link="'https://favicon.io/favicon-generator/'"
         :text="'Favicon.io.'"
       />

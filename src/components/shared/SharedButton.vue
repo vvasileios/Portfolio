@@ -1,38 +1,22 @@
 <script setup>
-import { useRouter } from "vue-router";
-
-const router = useRouter();
-
 defineProps({
   text: {
     type: String,
     default: "",
   },
-
-  to: {
-    type: String,
-    default: "",
-  },
-
-  path: {
-    type: String,
-    default: "",
-  },
 });
 
-const navigate = (path, to) => {
-  if (path) {
-    window.open(path, "_blank");
-  } else if (to) {
-    router.push(to);
-  }
+const emit = defineEmits(["click"]);
+
+const handleClick = () => {
+  emit("click");
 };
 </script>
 
 <template>
   <button
     class="group font-medium text-slate-100 hover:text-teal-300 focus:text-slate-100"
-    @click="navigate(path, to)"
+    @click="handleClick"
   >
     {{ text }}
     <font-awesome-icon

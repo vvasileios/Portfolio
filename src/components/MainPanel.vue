@@ -1,10 +1,11 @@
 <script setup>
 import { onMounted, onUnmounted, ref } from "vue";
 import { useStore } from "vuex";
+import { useRouter } from "vue-router";
 import ContentSection from "./shared/ContentSection.vue";
 import LinkCard from "./shared/LinkCard.vue";
-import ExternalLink from "./shared/ExternalLink.vue";
-import InternalLink from "./shared/InternalLink.vue";
+import AnchorTag from "./shared/AnchorTag.vue";
+import SharedButton from "./shared/SharedButton.vue";
 import Footer from "./Footer.vue";
 import {
   experienceContent,
@@ -13,6 +14,7 @@ import {
 } from "@/content/texts.js";
 
 const store = useStore();
+const router = useRouter();
 
 const experienceContentRef = ref(experienceContent);
 const educationContentRef = ref(educationContent);
@@ -35,6 +37,14 @@ const updateSection = () => {
   });
 };
 
+const handleCV = () => {
+  window.open("/dummy.pdf", "_blank");
+};
+
+const changePage = () => {
+  router.push("/table");
+};
+
 onMounted(() => window.addEventListener("scroll", updateSection));
 
 onUnmounted(() => window.removeEventListener("scroll", updateSection));
@@ -54,13 +64,13 @@ onUnmounted(() => window.removeEventListener("scroll", updateSection));
         <p class="mb-4">
           Since then, I've been fortunate enough to contribute to the tech
           industry in a
-          <ExternalLink
+          <AnchorTag
             :link="'https://contractuo.com/'"
             :text="'vibrant start-up environment'"
             about-content
           />, where I began honing my skills and gaining valuable experience.
           Currently, I'm part of a
-          <ExternalLink
+          <AnchorTag
             :link="'https://stellarblue.eu/'"
             :text="'forward-thinking startup'"
             about-content
@@ -93,7 +103,7 @@ onUnmounted(() => window.removeEventListener("scroll", updateSection));
           :list="job.techStack"
         />
 
-        <InternalLink :text="'View Full Résumé'" :path="'/dummy.pdf'" />
+        <SharedButton :text="'View Full Résumé'" @click="handleCV" />
       </template>
     </content-section>
 
@@ -128,7 +138,7 @@ onUnmounted(() => window.removeEventListener("scroll", updateSection));
           :link="project.link"
           :list="project.techStack"
         />
-        <InternalLink :text="'View Full Project Archive'" />
+        <SharedButton :text="'View Full Project Archive'" @click="changePage" />
       </template>
     </content-section>
 
