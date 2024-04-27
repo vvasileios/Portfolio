@@ -27,7 +27,10 @@ const handleProject = (link) => {
         <th
           v-for="(header, index) in tableHeaders"
           :key="index"
-          class="py-4 pr-8 text-sm font-semibold text-slate-200 lg:table-cell"
+          :class="[
+            'py-4 pr-8 text-sm font-semibold text-slate-200 lg:table-cell',
+            index === 1 || index === 2 ? 'hidden md:table-cell' : '',
+          ]"
         >
           {{ header }}
         </th>
@@ -40,14 +43,14 @@ const handleProject = (link) => {
         class="border-b border-slate-300/10 last:border-none"
       >
         <td
-          class="py-4 pr-4 align-top font-semibold leading-snug text-slate-200"
+          class="py-4 pr-4 align-top font-semibold text-sm md:text-base leading-snug text-slate-200"
         >
           {{ project.title }}
         </td>
-        <td class="py-4 pr-4 align-top text-sm lg:table-cell">
+        <td class="hidden py-4 pr-4 align-top text-sm md:table-cell">
           {{ project.made }}
         </td>
-        <td class="py-4 pr-4 align-top text-sm lg:table-cell">
+        <td class="hidden w-2/4 py-4 pr-4 align-top text-sm md:table-cell">
           <ul class="flex flex-wrap">
             <li
               v-for="(item, itemIndex) in project.items"
