@@ -1,5 +1,5 @@
 <script setup>
-import Pill from "./Pill.vue";
+import PillComponent from "./PillComponent.vue";
 
 defineProps({
   icon: {
@@ -73,9 +73,9 @@ defineProps({
       <p class="mt-2 text-sm leading-normal">{{ description }}</p>
       <ul v-if="list" class="mt-2 flex flex-wrap">
         <li v-for="item in list" :key="item" class="mr-1.5 mt-2">
-          <Pill :colors="'bg-teal-400/10 text-teal-300'">
+          <pill-component :colors="'bg-teal-400/10 text-teal-300'">
             {{ item }}
-          </Pill>
+          </pill-component>
         </li>
       </ul>
     </div>

@@ -1,53 +1,72 @@
-<script setup></script>
+<script setup>
+import PillComponent from "./PillComponent.vue";
+import SharedButton from "./SharedButton.vue";
+
+defineProps({
+  tableHeaders: {
+    type: Array,
+    default: () => [],
+  },
+  tableBody: {
+    type: Array,
+    default: () => [],
+  },
+});
+
+const handleProject = (link) => {
+  window.open(link, "_blank");
+};
+</script>
 
 <template>
-  <div
-    class="mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-20 lg:px-24 lg:py-0"
-  >
-    <div class="lg:py-24">
-      <h1 class="text-4xl font-bold tracking-tight text-slate-200 sm:text-5xl">
-        Projects
-      </h1>
-      <table class="mt-12 w-full border-collapse text-left">
-        <thead
-          class="sticky top-0 z-10 border-b border-slate-300/10 bg-slate-900/75 px-6 py-5 backdrop-blur"
+  <table class="mt-12 w-full border-collapse text-left">
+    <thead
+      class="sticky top-0 z-10 border-b border-slate-300/10 bg-slate-900/75 px-6 py-5 backdrop-blur"
+    >
+      <tr>
+        <th
+          v-for="(header, index) in tableHeaders"
+          :key="index"
+          class="py-4 pr-8 text-sm font-semibold text-slate-200 lg:table-cell"
         >
-          <tr>
-            <th
-              class="hidden py-4 pr-8 text-sm font-semibold text-slate-200 sm:table-cell"
+          {{ header }}
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr
+        v-for="project in tableBody"
+        :key="project.key"
+        class="border-b border-slate-300/10 last:border-none"
+      >
+        <td
+          class="py-4 pr-4 align-top font-semibold leading-snug text-slate-200"
+        >
+          {{ project.title }}
+        </td>
+        <td class="py-4 pr-4 align-top text-sm lg:table-cell">
+          {{ project.made }}
+        </td>
+        <td class="py-4 pr-4 align-top text-sm lg:table-cell">
+          <ul class="flex flex-wrap">
+            <li
+              v-for="(item, itemIndex) in project.items"
+              :key="itemIndex"
+              class="my-1 mr-1.5"
             >
-              Project
-            </th>
-            <th
-              class="hidden py-4 pr-8 text-sm font-semibold text-slate-200 lg:table-cell"
-            >
-              Smth
-            </th>
-            <th
-              class="hidden py-4 pr-8 text-sm font-semibold text-slate-200 lg:table-cell"
-            >
-              Build with
-            </th>
-            <th class="py-4 pr-8 text-sm font-semibold text-slate-200">Link</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr class="border-b border-slate-300/10 last:border-none">
-            <td
-              class="hidden py-4 pr-4 align-top font-semibold leading-snug text-slate-200 sm:table-cell"
-            >
-              hahahahaahah
-            </td>
-            <td class="hidden py-4 pr-4 align-top text-sm lg:table-cell">
-              hahahahahahaha
-            </td>
-            <td class="hidden py-4 pr-4 align-top text-sm lg:table-cell">
-              hahahahahaha
-            </td>
-            <td class="py-4 pr-4 align-top text-sm">hahahahahaha</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
+              <pill-component :colors="'bg-teal-400/10 text-teal-300'">
+                {{ item }}
+              </pill-component>
+            </li>
+          </ul>
+        </td>
+        <td class="py-4 pr-4 align-top text-sm lg:table-cell">
+          <SharedButton
+            :text="'Go to Project'"
+            @click="handleProject(project.link)"
+          />
+        </td>
+      </tr>
+    </tbody>
+  </table>
 </template>
