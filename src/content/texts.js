@@ -173,9 +173,9 @@ export const tableContent = {
     {
       key: "7",
       title: "Ever-Clean",
-      made: "Academic/Client",
+      made: "Client",
       items: ["JavaScript", "HTML", "CSS", "Bootstrap", "PHP", "SQL", "MySQL"],
-      link: "https://lab.mst.ihu.gr/mais/vavasil1/webprog4/",
+      link: "",
     },
     {
       key: "8",

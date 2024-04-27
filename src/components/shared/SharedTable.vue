@@ -65,7 +65,8 @@ const handleProject = (link) => {
         </td>
         <td class="py-4 pr-4 align-top text-sm lg:table-cell">
           <SharedButton
-            :text="'Go to Project'"
+            v-if="project.link"
+            :text="'View'"
             @click="handleProject(project.link)"
           />
         </td>
