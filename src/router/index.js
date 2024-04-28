@@ -1,6 +1,4 @@
 import { createRouter, createWebHistory } from "vue-router";
-import PortfolioPage from "@/pages/PortfolioPage.vue";
-import ProjectTable from "@/pages/ProjectTable.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -8,12 +6,12 @@ const router = createRouter({
     {
       path: "/",
       name: "Portfolio",
-      component: PortfolioPage,
+      component: () => import("@/pages/PortfolioPage.vue"),
     },
     {
       path: "/table",
       name: "ProjectTable",
-      component: ProjectTable,
+      component: () => import("@/pages/ProjectTable.vue"),
     },
   ],
 });
