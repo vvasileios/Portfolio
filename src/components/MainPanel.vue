@@ -11,7 +11,7 @@ import {
   experienceContent,
   educationContent,
   projectsContent,
-} from "@/content/texts.js";
+} from "@/content/PortfolioContent";
 
 const store = useStore();
 const router = useRouter();

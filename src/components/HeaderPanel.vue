@@ -1,7 +1,7 @@
 <script setup>
 import { ref, computed } from "vue";
 import { useStore } from "vuex";
-import { headerContent } from "@/content/texts";
+import { headerContent, techIcons } from "@/content/PortfolioContent";
 
 const store = useStore();
 
@@ -19,7 +19,7 @@ const updateSelectedSection = (section) =>
   <header
     class="lg:sticky lg:top-0 lg:flex lg:h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24"
   >
-    <div>
+    <div class="mb-10">
       <h1 class="text-4xl text-slate-200 font-bold tracking-tight sm:text-5xl">
         {{ headerContentRef.name }}
       </h1>
@@ -51,7 +51,7 @@ const updateSelectedSection = (section) =>
             <font-awesome-icon
               :icon="['fas', 'arrow-right']"
               :class="{
-                'transition rotate-180 duration-500 text-teal-500':
+                'transition rotate-180 duration-500 text-slate-200':
                   activeSection === section,
               }"
               class="transition duration-500"
@@ -60,52 +60,11 @@ const updateSelectedSection = (section) =>
         </ul>
       </nav>
 
-      <div class="">
-        <ul class="mt-16 flex flex-row flex-wrap">
-          <li class="mx-3 hover:text-teal-300">
-            <font-awesome-icon :icon="['fa-brands', 'fa-js']" size="xl" />
+      <div class="mt-16">
+        <ul class="flex gap-5 flex-wrap py-5">
+          <li v-for="(icon, index) in techIcons" :key="index">
+            <img :src="icon.src" :alt="icon.alt" class="w-8 h-8" />
           </li>
-          <li class="mx-3 hover:text-teal-300">
-            <font-awesome-icon :icon="['fa-brands', 'fa-vuejs']" size="xl" />
-          </li>
-          <li class="mx-3 hover:text-teal-300">
-            <font-awesome-icon
-              :icon="['fa-brands', 'fa-bootstrap']"
-              size="xl"
-            />
-          </li>
-          <li class="mx-3 hover:text-teal-300">
-            <font-awesome-icon :icon="['fa-brands', 'fa-git']" size="xl" />
-          </li>
-          <li class="mx-3 hover:text-teal-300">
-            <font-awesome-icon
-              :icon="['fa-brands', 'fa-wordpress']"
-              size="xl"
-            />
-          </li>
-          <li class="mx-3 hover:text-teal-300">
-            <font-awesome-icon :icon="['fa-brands', 'fa-java']" size="xl" />
-          </li>
-          <li class="mx-3 hover:text-teal-300">
-            <font-awesome-icon :icon="['fa-solid', 'fa-database']" size="xl" />
-          </li>
-          <li class="mx-3 hover:text-teal-300">
-            <font-awesome-icon :icon="['fa-brands', 'fa-php']" size="xl" />
-          </li>
-          <li class="mx-3 hover:text-teal-300">
-            <font-awesome-icon :icon="['fa-brands', 'fa-node']" size="xl" />
-          </li>
-          <li class="mx-3 hover:text-teal-300">
-            <font-awesome-icon :icon="['fa-brands', 'fa-html5']" size="xl" />
-          </li>
-          <li class="mx-3 hover:text-teal-300">
-            <font-awesome-icon :icon="['fa-brands', 'fa-css-alt']" size="xl" />
-          </li>
-          <!-- <li class="mx-2">C#</li> -->
-          <!-- <li class="mx-2">Express</li> -->
-          <!-- <li class="mx-2">SpringBoot</li> -->
-          <!-- <li class="mx-2">Tailwind</li> -->
-          <!-- <li class="mx-2">Typescript</li> -->
         </ul>
       </div>
     </div>

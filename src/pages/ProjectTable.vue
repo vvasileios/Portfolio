@@ -3,7 +3,7 @@ import { ref } from "vue";
 import { useRouter } from "vue-router";
 import SharedTable from "@/components/shared/SharedTable.vue";
 import SharedButton from "@/components/shared/SharedButton.vue";
-import { tableContent } from "@/content/texts";
+import { tableContent } from "@/content/PortfolioContent";
 
 const router = useRouter();
 const tableHeaders = ref(["Project", "Made For", "Build with", "Link"]);
