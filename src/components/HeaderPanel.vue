@@ -60,7 +60,7 @@ const updateSelectedSection = (section) =>
         </ul>
       </nav>
 
-      <div class="mt-16">
+      <div class="mt-16 mr-24">
         <ul class="flex gap-5 flex-wrap py-5">
           <li v-for="(icon, index) in techIcons" :key="index">
             <img :src="icon.src" :alt="icon.alt" class="w-8 h-8" />
