@@ -1,5 +1,10 @@
-<script setup></script>
+<script setup>
+import TorchMouse from "./components/shared/TorchMouse.vue";
+</script>
 
 <template>
-  <router-view />
+  <div>
+    <TorchMouse />
+    <router-view />
+  </div>
 </template>
