@@ -12,37 +12,25 @@ onBeforeUnmount(() => {
   window.removeEventListener("mousemove", handleMouseMove);
 });
 
-const torchStyle = computed(() => {
-  return {
-    top: `${mouseY.value}px`,
-    left: `${mouseX.value}px`,
-  };
-});
-
 const handleMouseMove = (event) => {
+  console.log(event.clientX, event.clientY);
   mouseX.value = event.clientX;
   mouseY.value = event.clientY;
 };
+
+const torchStyle = computed(() => {
+  console.log(mouseX.value, mouseY.value);
+  return {
+    top: `${mouseY.value}px`,
+    left: `${mouseX.value}px`,
+    background: `radial-gradient(600px circle at var('${mouseX.value}') var('${mouseY.value}'), rgba(29, 78, 216, 0.15) 80%)`,
+  };
+});
 </script>
 
 <template>
-  <div class="torch" :style="torchStyle"></div>
+  <div
+    class="pointer-events-none fixed inset-0 z-30 transition duration-300 lg:absolute"
+    :style="torchStyle"
+  ></div>
 </template>
-
-<style scoped>
-.torch {
-  position: fixed;
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  pointer-events: none;
-  background: radial-gradient(
-    circle,
-    rgba(255, 255, 255, 0.8) 0%,
-    rgba(255, 255, 255, 0.3) 50%,
-    rgba(255, 255, 255, 0) 100%
-  );
-  mix-blend-mode: multiply;
-  z-index: 9999;
-}
-</style>
