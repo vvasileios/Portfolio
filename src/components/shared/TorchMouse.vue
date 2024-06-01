@@ -13,17 +13,18 @@ onBeforeUnmount(() => {
 });
 
 const handleMouseMove = (event) => {
-  console.log(event.clientX, event.clientY);
   mouseX.value = event.clientX;
   mouseY.value = event.clientY;
 };
 
 const torchStyle = computed(() => {
-  console.log(mouseX.value, mouseY.value);
+  const circleSize = 600;
+  const halfCircleSize = circleSize / 2;
+
   return {
-    top: `${mouseY.value}px`,
-    left: `${mouseX.value}px`,
-    background: `radial-gradient(600px circle at var('${mouseX.value}') var('${mouseY.value}'), rgba(29, 78, 216, 0.15) 80%)`,
+    top: `${mouseY.value - halfCircleSize}px`,
+    left: `${mouseX.value - halfCircleSize}px`,
+    background: `radial-gradient(${circleSize}px circle at ${mouseX.value}px ${mouseY.value}px, rgba(29, 78, 216, 0.15), transparent 80%)`,
   };
 });
 </script>
