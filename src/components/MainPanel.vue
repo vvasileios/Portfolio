@@ -5,7 +5,7 @@ import { useRouter } from "vue-router";
 import ContentSection from "./shared/ContentSection.vue";
 import LinkCard from "./shared/LinkCard.vue";
 import AnchorTag from "./shared/AnchorTag.vue";
-import SharedButton from "./shared/SharedButton.vue";
+import ButtonComponent from "./shared/ButtonComponent.vue";
 import Footer from "./Footer.vue";
 import {
   experienceContent,
@@ -103,7 +103,7 @@ onUnmounted(() => window.removeEventListener("scroll", updateSection));
           :list="job.techStack"
         />
 
-        <SharedButton :text="'View Full Résumé'" @click="handleCV" />
+        <ButtonComponent :text="'View Full Résumé'" @click="handleCV" />
       </template>
     </content-section>
 
@@ -139,7 +139,7 @@ onUnmounted(() => window.removeEventListener("scroll", updateSection));
           :list="project.techStack"
         />
 
-        <SharedButton :text="'View Project Archive'" @click="changePage" />
+        <ButtonComponent :text="'View Project Archive'" @click="changePage" />
       </template>
     </content-section>
 

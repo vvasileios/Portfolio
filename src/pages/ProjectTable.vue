@@ -1,8 +1,8 @@
 <script setup>
 import { ref } from "vue";
 import { useRouter } from "vue-router";
-import SharedTable from "@/components/shared/SharedTable.vue";
-import SharedButton from "@/components/shared/SharedButton.vue";
+import TableComponent from "@/components/shared/TableComponent.vue";
+import ButtonComponent from "@/components/shared/ButtonComponent.vue";
 import { tableContent } from "@/content/PortfolioContent";
 
 const router = useRouter();
@@ -18,7 +18,7 @@ const handleBack = () => {
     class="mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-20 lg:px-24 lg:py-0"
   >
     <div class="lg:py-24">
-      <SharedButton
+      <ButtonComponent
         :text="'Vasileios Vasileiadis'"
         is-back
         @click="handleBack"
@@ -26,7 +26,7 @@ const handleBack = () => {
       <h1 class="text-4xl font-bold tracking-tight text-slate-200 sm:text-5xl">
         Projects
       </h1>
-      <SharedTable
+      <TableComponent
         :table-headers="tableHeaders"
         :table-body="tableContent.tableProjects"
       />

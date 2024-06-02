@@ -1,6 +1,6 @@
 <script setup>
 import PillComponent from "./PillComponent.vue";
-import SharedButton from "./SharedButton.vue";
+import ButtonComponent from "./ButtonComponent.vue";
 
 defineProps({
   tableHeaders: {
@@ -66,7 +66,7 @@ const handleProject = (link) => {
           </ul>
         </td>
         <td class="py-4 pr-4 align-top text-sm lg:table-cell">
-          <SharedButton
+          <ButtonComponent
             v-if="project.link"
             :text="'View'"
             @click="handleProject(project.link)"
