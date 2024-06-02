@@ -43,11 +43,13 @@ const handleProject = (link) => {
         class="border-b border-slate-300/10 last:border-none"
       >
         <td
-          class="py-4 pr-4 align-top font-semibold text-sm md:text-base leading-snug text-slate-200"
+          class="py-4 pr-4 align-top font-semibold text-sm md:text-base leading-snug text-slate-200 hover:text-teal-300"
         >
           {{ project.title }}
         </td>
-        <td class="hidden py-4 pr-4 align-top text-sm md:table-cell">
+        <td
+          class="hidden py-4 pr-4 align-top text-sm md:table-cell hover:text-slate-200"
+        >
           {{ project.made }}
         </td>
         <td class="hidden w-2/4 py-4 pr-4 align-top text-sm md:table-cell">

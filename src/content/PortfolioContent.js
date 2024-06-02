@@ -46,21 +46,21 @@ export const educationContent = {
   schools: [
     {
       key: "1",
+      dates: "Oct 2022 - Oct 2024",
+      title: "MSc, Information Systems ·",
+      school: "IHU",
+      link: "https://mais.ihu.gr/",
+      description:
+        "Achieved an MSc in Information Systems, focusing on the synergy between technology and business, with key learnings in systems design, web programming, and AI, enhancing capabilities in developing innovative IT solutions.",
+    },
+    {
+      key: "2",
       dates: "Mar 2024 - Present",
       title: "Back-end Engineering ·",
       school: "TechPro Academy",
       link: "https://www.techproacademy.gr/",
       description:
         "Completed an intensive Back-end Engineering bootcamp, gaining hands-on experience in back-end development technologies, with a focus on real-world application and project-based learning.",
-    },
-    {
-      key: "2",
-      dates: "Oct 2022 - Present",
-      title: "MSc, Information Systems ·",
-      school: "IHU",
-      link: "https://mais.ihu.gr/",
-      description:
-        "Achieved an MSc in Information Systems, focusing on the synergy between technology and business, with key learnings in systems design, web programming, and AI, enhancing capabilities in developing innovative IT solutions.",
     },
     {
       key: "3",
