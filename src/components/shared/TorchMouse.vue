@@ -13,8 +13,8 @@ onBeforeUnmount(() => {
 });
 
 const handleMouseMove = (event) => {
-  mouseX.value = event.clientX;
-  mouseY.value = event.clientY;
+  mouseX.value = event.pageX;
+  mouseY.value = event.pageY;
 };
 
 const torchStyle = computed(() => {
