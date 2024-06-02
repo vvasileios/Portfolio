@@ -18,13 +18,12 @@ const handleMouseMove = (event) => {
 };
 
 const torchStyle = computed(() => {
-  const circleSize = 600;
-  const halfCircleSize = circleSize / 2;
-
   return {
-    top: `${mouseY.value - halfCircleSize}px`,
-    left: `${mouseX.value - halfCircleSize}px`,
-    background: `radial-gradient(${circleSize}px circle at ${mouseX.value}px ${mouseY.value}px, rgba(29, 78, 216, 0.15), transparent 80%)`,
+    top: 0,
+    left: 0,
+    width: "100%",
+    height: "100%",
+    background: `radial-gradient(circle 600px at ${mouseX.value}px ${mouseY.value}px, rgba(29, 78, 216, 0.15), transparent 80%)`,
   };
 });
 </script>
