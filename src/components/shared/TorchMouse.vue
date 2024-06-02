@@ -3,18 +3,27 @@ import { ref, computed, onMounted, onBeforeUnmount } from "vue";
 
 const mouseX = ref(0);
 const mouseY = ref(0);
+const scrollX = ref(0);
+const scrollY = ref(0);
 
 onMounted(() => {
   window.addEventListener("mousemove", handleMouseMove);
+  window.addEventListener("scroll", handleScroll);
 });
 
 onBeforeUnmount(() => {
   window.removeEventListener("mousemove", handleMouseMove);
+  window.removeEventListener("scroll", handleScroll);
 });
 
 const handleMouseMove = (event) => {
   mouseX.value = event.pageX;
   mouseY.value = event.pageY;
+};
+
+const handleScroll = () => {
+  scrollX.value = window.scrollX;
+  scrollY.value = window.scrollY;
 };
 
 const torchStyle = computed(() => {
