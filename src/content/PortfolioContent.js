@@ -232,13 +232,13 @@ import react from "@/assets/icons/react.png";
 
 export const techIcons = [
   { src: javascript, alt: "JS" },
-  { src: typescript, alt: "TS" },
   { src: vue, alt: "Vue" },
+  { src: typescript, alt: "TS" },
   { src: react, alt: "React" },
-  { src: tailwind, alt: "TailwindCSS" },
-  { src: bootstrap, alt: "Bootstrap" },
   { src: html, alt: "HTML" },
   { src: css, alt: "CSS" },
+  { src: tailwind, alt: "TailwindCSS" },
+  { src: bootstrap, alt: "Bootstrap" },
   { src: csharp, alt: "C#" },
   { src: java, alt: "Java" },
   { src: git, alt: "Git" },
