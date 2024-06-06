@@ -38,7 +38,7 @@ const updateSection = () => {
 };
 
 const handleCV = () => {
-  window.open("/dummy.pdf", "_blank");
+  window.open("/Vasileios_Vasileiadis_CV.pdf", "_blank");
 };
 
 const changePage = () => {
