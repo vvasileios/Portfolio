@@ -51,7 +51,7 @@ onUnmounted(() => window.removeEventListener("scroll", updateSection));
 </script>
 
 <template>
-  <main class="pt-24 lg:w-1/2 lg:py-24">
+  <main class="pt-14 lg:w-1/2 lg:py-24">
     <content-section :id="id" :title="title">
       <template #content>
         <p class="mb-4">

@@ -25,15 +25,7 @@ import AnchorTag from "./shared/AnchorTag.vue";
       <AnchorTag
         :link="'https://top.host/web-hosting.htm'"
         :text="'Top.Host'"
-      />. Icons are set through
-
-      <AnchorTag :link="'https://fontawesome.com/'" :text="'Font Awesome'" />,
-      and favicon created with
-
-      <AnchorTag
-        :link="'https://favicon.io/favicon-generator/'"
-        :text="'Favicon.io.'"
-      />
+      />.
     </p>
   </footer>
 </template>
