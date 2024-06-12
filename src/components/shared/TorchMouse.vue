@@ -7,11 +7,13 @@ const windowWidth = ref(window.innerWidth);
 
 onMounted(() => {
   window.addEventListener("mousemove", handleMouseMove);
+  window.addEventListener("scroll", handleScroll);
   window.addEventListener("resize", handleResize);
 });
 
 onBeforeUnmount(() => {
   window.removeEventListener("mousemove", handleMouseMove);
+  window.removeEventListener("scroll", handleScroll);
   window.removeEventListener("resize", handleResize);
 });
 
@@ -22,6 +24,13 @@ const handleResize = () => {
 const handleMouseMove = (event) => {
   mouseX.value = event.pageX;
   mouseY.value = event.pageY;
+};
+
+const handleScroll = () => {
+  // const scrollX = window.scrollX || window.pageXOffset;
+  // const scrollY = window.scrollY || window.pageYOffset;
+  // mouseX.value = mouseX.value + scrollX;
+  // mouseY.value = mouseY.value + scrollY;
 };
 
 const torchStyle = computed(() => {
