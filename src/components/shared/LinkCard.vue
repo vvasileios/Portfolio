@@ -46,8 +46,13 @@ defineProps({
     target="_blank"
     rel="noopener noreferrer"
   >
-    <div class="col-span-2">
-      <img v-if="icon" :src="icon" alt="Icon" />
+    <div class="col-span-2 pr-1">
+      <img
+        v-if="icon"
+        class="rounded group-hover:border-2 group-hover:border-teal-300"
+        :src="icon"
+        alt="Icon"
+      />
 
       <span
         v-else
