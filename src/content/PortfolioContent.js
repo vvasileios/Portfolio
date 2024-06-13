@@ -212,23 +212,23 @@ export const tableContent = {
   ],
 };
 
-import javascript from "@/assets/icons/javascript.png";
-import typescript from "@/assets/icons/typescript.png";
-import vue from "@/assets/icons/vue.png";
-import tailwind from "@/assets/icons/tailwindcss.png";
-import bootstrap from "@/assets/icons/bootstrap.png";
-import html from "@/assets/icons/html.png";
-import css from "@/assets/icons/css.png";
-import java from "@/assets/icons/java.png";
-import csharp from "@/assets/icons/csharp.png";
-import git from "@/assets/icons/git.png";
-import sql from "@/assets/icons/sql.png";
-import db from "@/assets/icons/databases.png";
-import node from "@/assets/icons/node.png";
-import express from "@/assets/icons/express.png";
-import php from "@/assets/icons/php.png";
-import wordpress from "@/assets/icons/wordpress.png";
-import react from "@/assets/icons/react.png";
+import javascript from "/assets/icons/javascript.png";
+import typescript from "/assets/icons/typescript.png";
+import vue from "/assets/icons/vue.png";
+import tailwind from "/assets/icons/tailwindcss.png";
+import bootstrap from "/assets/icons/bootstrap.png";
+import html from "/assets/icons/html.png";
+import css from "/assets/icons/css.png";
+import java from "/assets/icons/java.png";
+import springboot from "/assets/icons/springboot.png";
+import csharp from "/assets/icons/csharp.png";
+import git from "/assets/icons/git.png";
+import sql from "/assets/icons/sql.png";
+import node from "/assets/icons/node.png";
+import express from "/assets/icons/express.png";
+import php from "/assets/icons/php.png";
+import wordpress from "/assets/icons/wordpress.png";
+import react from "/assets/icons/react.png";
 
 export const techIcons = [
   { src: javascript, alt: "JS" },
@@ -241,6 +241,7 @@ export const techIcons = [
   { src: bootstrap, alt: "Bootstrap" },
   { src: csharp, alt: "C#" },
   { src: java, alt: "Java" },
+  { src: springboot, alt: "SpringBoot" },
   { src: git, alt: "Git" },
   { src: sql, alt: "SQL" },
   { src: node, alt: "Node" },
