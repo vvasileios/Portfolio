@@ -4,11 +4,14 @@ import { ref, computed, onMounted, onBeforeUnmount } from "vue";
 const mouseX = ref(0);
 const mouseY = ref(0);
 const windowWidth = ref(window.innerWidth);
+const scrollX = ref(window.scrollX);
+const scrollY = ref(window.scrollY);
 
 onMounted(() => {
   window.addEventListener("mousemove", handleMouseMove);
   window.addEventListener("scroll", handleScroll);
   window.addEventListener("resize", handleResize);
+  handleScroll();
 });
 
 onBeforeUnmount(() => {
@@ -22,15 +25,13 @@ const handleResize = () => {
 };
 
 const handleMouseMove = (event) => {
-  mouseX.value = event.pageX;
-  mouseY.value = event.pageY;
+  mouseX.value = event.clientX;
+  mouseY.value = event.clientY;
 };
 
 const handleScroll = () => {
-  // const scrollX = window.scrollX || window.pageXOffset;
-  // const scrollY = window.scrollY || window.pageYOffset;
-  // mouseX.value = mouseX.value + scrollX;
-  // mouseY.value = mouseY.value + scrollY;
+  scrollX.value = window.scrollX;
+  scrollY.value = window.scrollY;
 };
 
 const torchStyle = computed(() => {
@@ -40,12 +41,15 @@ const torchStyle = computed(() => {
       ? "rgba(29, 78, 216, 0.3)"
       : "rgba(29, 78, 216, 0.2)";
 
+  const adjustedX = mouseX.value + scrollX.value;
+  const adjustedY = mouseY.value + scrollY.value;
+
   return {
     top: 0,
     left: 0,
     width: "100%",
     height: "100%",
-    background: `radial-gradient(circle 600px at ${mouseX.value}px ${mouseY.value}px, ${color}, transparent ${transparency})`,
+    background: `radial-gradient(circle 600px at ${adjustedX}px ${adjustedY}px, ${color}, transparent ${transparency})`,
   };
 });
 </script>
