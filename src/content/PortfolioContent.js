@@ -212,23 +212,23 @@ export const tableContent = {
   ],
 };
 
-import javascript from "/assets/icons/javascript.png";
-import typescript from "/assets/icons/typescript.png";
-import vue from "/assets/icons/vue.png";
-import tailwind from "/assets/icons/tailwindcss.png";
-import bootstrap from "/assets/icons/bootstrap.png";
-import html from "/assets/icons/html.png";
-import css from "/assets/icons/css.png";
-import java from "/assets/icons/java.png";
-import springboot from "/assets/icons/springboot.png";
-import csharp from "/assets/icons/csharp.png";
-import git from "/assets/icons/git.png";
-import sql from "/assets/icons/sql.png";
-import node from "/assets/icons/node.png";
-import express from "/assets/icons/express.png";
-import php from "/assets/icons/php.png";
-import wordpress from "/assets/icons/wordpress.png";
-import react from "/assets/icons/react.png";
+import javascript from "/assets/icons/TechIcons/javascript.png";
+import typescript from "/assets/icons/TechIcons/typescript.png";
+import vue from "/assets/icons/TechIcons/vue.png";
+import tailwind from "/assets/icons/TechIcons/tailwindcss.png";
+import bootstrap from "/assets/icons/TechIcons/bootstrap.png";
+import html from "/assets/icons/TechIcons/html.png";
+import css from "/assets/icons/TechIcons/css.png";
+import java from "/assets/icons/TechIcons/java.png";
+import springboot from "/assets/icons/TechIcons/springboot.png";
+import csharp from "/assets/icons/TechIcons/csharp.png";
+import git from "/assets/icons/TechIcons/git.png";
+import sql from "/assets/icons/TechIcons/sql.png";
+import node from "/assets/icons/TechIcons/node.png";
+import express from "/assets/icons/TechIcons/express.png";
+import php from "/assets/icons/TechIcons/php.png";
+import wordpress from "/assets/icons/TechIcons/wordpress.png";
+import react from "/assets/icons/TechIcons/react.png";
 
 export const techIcons = [
   { src: javascript, alt: "JS" },
