@@ -83,6 +83,14 @@ export const projectsContent = {
   projects: [
     {
       key: "1",
+      icon: "",
+      title: "Book Catalog RESTful API",
+      link: "",
+      description:
+        "Developed a RESTful API for a book catalog system, enabling users to manage book data, including titles, authors, and genres. Implemented CRUD operations for book entities, with secure authentication and authorization features. The API was built using Java, SpringBoot, and Spring Data JPA, with a H2 In-Memory database.",
+    },
+    {
+      key: "2",
       icon: WeatherWidget,
       title: "Weather Widget",
       link: "https://github.com/vvasileios/WeatherWidget",
@@ -91,7 +99,7 @@ export const projectsContent = {
       techStack: ["JavaScript", "Vue", "TailwindCSS"],
     },
     {
-      key: "2",
+      key: "3",
       icon: "",
       title: "Time-Series Visualization",
       link: "https://github.com/vvasileios/timeseries-visualization",
@@ -100,7 +108,7 @@ export const projectsContent = {
       techStack: ["JavaScript", "Vue", "TailwindCSS"],
     },
     {
-      key: "3",
+      key: "4",
       icon: "",
       title: "Spaceflight News Blog",
       link: "https://github.com/vvasileios/spaceflight-news",
@@ -122,35 +130,6 @@ export const tableContent = {
     },
     {
       key: "2",
-      title: "MultiVenture",
-      made: "Self-learning",
-      items: [
-        "Vue 3",
-        "Pinia",
-        "VueRouter",
-        "Typescript",
-        "TailwindCSS",
-        "HTML",
-        "CSS",
-      ],
-      link: "https://github.com/vvasileios/MultiVenture",
-    },
-    {
-      key: "3",
-      title: "WeatherWidget",
-      made: "Self-learning",
-      items: ["Vue 3", "Vuex", "JavaScript", "TailwindCSS", "HTML", "CSS"],
-      link: "https://github.com/vvasileios/WeatherWidget",
-    },
-    {
-      key: "4",
-      title: "Time-Series Visualization",
-      made: "Self-learning",
-      items: ["Vue 3", "Vuex", "JavaScript", "TailwindCSS", "HTML", "CSS"],
-      link: "https://github.com/vvasileios/timeseries-visualization",
-    },
-    {
-      key: "5",
       title: "Portfolio",
       made: "Self-learning",
       items: [
@@ -166,7 +145,52 @@ export const tableContent = {
       link: "https://github.com/vvasileios/Portfolio",
     },
     {
+      key: "3",
+      title: "Book Catalog RESTful API",
+      made: "Bootcamp Project",
+      items: [
+        "Java",
+        "SpringBoot",
+        "Spring Data JPA",
+        "Spring Security",
+        "H2 Database",
+        "Maven",
+        "JUnit",
+        "Postman",
+        "Swagger",
+      ],
+    },
+    {
+      key: "4",
+      title: "MultiVenture",
+      made: "Self-learning",
+      items: [
+        "Vue 3",
+        "Pinia",
+        "VueRouter",
+        "Typescript",
+        "TailwindCSS",
+        "HTML",
+        "CSS",
+      ],
+      link: "https://github.com/vvasileios/MultiVenture",
+    },
+    {
+      key: "5",
+      title: "WeatherWidget",
+      made: "Self-learning",
+      items: ["Vue 3", "Vuex", "JavaScript", "TailwindCSS", "HTML", "CSS"],
+      link: "https://github.com/vvasileios/WeatherWidget",
+    },
+    {
       key: "6",
+      title: "Time-Series Visualization",
+      made: "Self-learning",
+      items: ["Vue 3", "Vuex", "JavaScript", "TailwindCSS", "HTML", "CSS"],
+      link: "https://github.com/vvasileios/timeseries-visualization",
+    },
+    {
+      key: "7",
       title: "Spaceflight News Blog",
       made: "Self-learning",
       items: [
@@ -182,14 +206,14 @@ export const tableContent = {
       link: "https://github.com/vvasileios/spaceflight-news",
     },
     {
-      key: "7",
+      key: "8",
       title: "Ever-Clean",
       made: "Client",
       items: ["JavaScript", "HTML", "CSS", "Bootstrap", "PHP", "MySQL"],
       link: "",
     },
     {
-      key: "8",
+      key: "9",
       title: "FaceRecognition App",
       made: "Self-learning",
       items: [
@@ -205,7 +229,7 @@ export const tableContent = {
       link: "",
     },
     {
-      key: "9",
+      key: "10",
       title: "MicroProjectsHub",
       made: "Self-learning",
       items: ["JavaScript", "HTML", "CSS"],
