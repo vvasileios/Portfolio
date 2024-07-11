@@ -22,10 +22,7 @@ import AnchorTag from "./shared/AnchorTag.vue";
 
       , deployed with
 
-      <AnchorTag
-        :link="'https://top.host/web-hosting.htm'"
-        :text="'Top.Host'"
-      />.
+      <AnchorTag :link="'https://vercel.com'" :text="'Vercel'" />.
     </p>
   </footer>
 </template>

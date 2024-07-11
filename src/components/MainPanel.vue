@@ -80,9 +80,9 @@ onUnmounted(() => window.removeEventListener("scroll", updateSection));
           technology solutions.
         </p>
         <p class="mb-4">
-          Beyond the screen, I find balance in exercise, delving into books,
-          enjoying quality time with my girlfriend, and embracing the simple joy
-          of long walks.
+          Beyond my professional interests, I maintain balance through exercise,
+          reading, spending quality time with my girlfriend, and engaging in
+          activities that help me recharge my batteries and relax.
         </p>
       </template>
     </content-section>
