@@ -79,11 +79,6 @@ onUnmounted(() => window.removeEventListener("scroll", updateSection));
           my knowledge and teamwork, contributing to innovative and sustainable
           technology solutions.
         </p>
-        <p class="mb-4">
-          Beyond my professional interests, I maintain balance through exercise,
-          reading, spending quality time with my girlfriend, and engaging in
-          activities that help me recharge my batteries and relax.
-        </p>
       </template>
     </content-section>
 
