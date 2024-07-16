@@ -16,7 +16,7 @@ export const experienceContent = {
       company: "StellarBlue",
       link: "https://stellarblue.eu/",
       description:
-        "Developed, maintained, and shipped in production, front-end code for the solutions softwares energy sector. Collaborated in an Agile environment, adapting efficiently to evolving project requirements, contributing to the timely delivery of high-quality solutions.",
+        "Developed, maintained, and deployed front-end code for software solutions in the energy sector. Collaborated in an Agile environment, quickly adapting to changing project needs to ensure the timely delivery of top-quality solutions.",
       techStack: ["JavaScript", "Vue", "Bootstrap", "C#", "Git", "HTML", "CSS"],
     },
     {
@@ -26,7 +26,7 @@ export const experienceContent = {
       company: "Contractuo",
       link: "https://contractuo.com/",
       description:
-        "Developed, maintained, and shipped in production, front-end code for the document management system using the Vue.js ecosystem. Applied OOP principles and the JavaScript Selection API to engineer an advanced application editor. Collaborated in an Agile environment, adapting efficiently to evolving project requirements, contributing to the timely delivery of high-quality solutions.",
+        "Engineered and maintained front-end code for a document management system using the Vue.js framework. Utilized Object-Oriented Programming principles and the JavaScript Selection API to create a sophisticated application editor. Actively collaborated in an Agile setting, adapting swiftly to project changes to deliver high-caliber solutions on schedule.",
       techStack: [
         "JavaScript",
         "Vue",
