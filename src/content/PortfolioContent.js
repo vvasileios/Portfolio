@@ -124,14 +124,12 @@ export const tableContent = {
     {
       key: "1",
       title: "OnWoodByMenelaos",
-      made: "Client",
       items: ["WordPress", "PHP", "HTML", "CSS"],
       link: "",
     },
     {
       key: "2",
       title: "Portfolio",
-      made: "Self-learning",
       items: [
         "Vue 3",
         "Vuex",
@@ -147,7 +145,6 @@ export const tableContent = {
     {
       key: "3",
       title: "Book Catalog RESTful API",
-      made: "Bootcamp Project",
       items: [
         "Java",
         "SpringBoot",
@@ -164,7 +161,6 @@ export const tableContent = {
     {
       key: "4",
       title: "MultiVenture",
-      made: "Self-learning",
       items: [
         "Vue 3",
         "Pinia",
@@ -179,21 +175,18 @@ export const tableContent = {
     {
       key: "5",
       title: "WeatherWidget",
-      made: "Self-learning",
       items: ["Vue 3", "Vuex", "JavaScript", "TailwindCSS", "HTML", "CSS"],
       link: "https://github.com/vvasileios/WeatherWidget",
     },
     {
       key: "6",
       title: "Time-Series Visualization",
-      made: "Self-learning",
       items: ["Vue 3", "Vuex", "JavaScript", "TailwindCSS", "HTML", "CSS"],
       link: "https://github.com/vvasileios/timeseries-visualization",
     },
     {
       key: "7",
       title: "Spaceflight News Blog",
-      made: "Self-learning",
       items: [
         "Vue 3",
         "Vuex",
@@ -209,14 +202,12 @@ export const tableContent = {
     {
       key: "8",
       title: "Ever-Clean",
-      made: "Client",
       items: ["JavaScript", "HTML", "CSS", "Bootstrap", "PHP", "MySQL"],
       link: "",
     },
     {
       key: "9",
       title: "FaceRecognition App",
-      made: "Self-learning",
       items: [
         "React",
         "Bootstrap",
@@ -232,7 +223,6 @@ export const tableContent = {
     {
       key: "10",
       title: "MicroProjectsHub",
-      made: "Self-learning",
       items: ["JavaScript", "HTML", "CSS"],
       link: "https://github.com/vvasileios/MicroProjectsHub",
     },

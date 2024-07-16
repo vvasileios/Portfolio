@@ -47,11 +47,6 @@ const handleProject = (link) => {
         >
           {{ project.title }}
         </td>
-        <td
-          class="hidden py-4 pr-4 align-top text-sm md:table-cell hover:text-slate-200"
-        >
-          {{ project.made }}
-        </td>
         <td class="hidden w-2/4 py-4 pr-4 align-top text-sm md:table-cell">
           <ul class="flex flex-wrap">
             <li

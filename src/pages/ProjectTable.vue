@@ -6,7 +6,7 @@ import ButtonComponent from "@/components/shared/ButtonComponent.vue";
 import { tableContent } from "@/content/PortfolioContent";
 
 const router = useRouter();
-const tableHeaders = ref(["Project", "Made For", "Build with", "Link"]);
+const tableHeaders = ref(["Project", "Build with", "Link"]);
 
 const handleBack = () => {
   router.push("/");
