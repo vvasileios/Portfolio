@@ -2,7 +2,7 @@ export const headerContent = {
   name: "Vasileios Vasileiadis",
   role: "Software Developer",
   intro:
-    "Crafting engaging digital experiences through code and continuous learning.",
+    "Creating impactful digital experiences through innovative coding and ongoing learning.",
 };
 
 export const experienceContent = {
