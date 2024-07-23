@@ -74,6 +74,7 @@ const updateSelectedSection = (section) =>
         <a
           :class="socialClasses"
           href="https://github.com/vvasileios"
+          target="_blank"
           aria-label="Github"
         >
           <font-awesome-icon :icon="['fab', 'github']" size="lg" />
@@ -83,6 +84,7 @@ const updateSelectedSection = (section) =>
         <a
           :class="socialClasses"
           href="https://www.linkedin.com/in/vasileios-vasileiadis-999405221/"
+          target="_blank"
           aria-label="LinkedIn"
         >
           <font-awesome-icon :icon="['fab', 'linkedin']" size="lg" />
@@ -92,6 +94,7 @@ const updateSelectedSection = (section) =>
         <a
           :class="socialClasses"
           href="https://www.instagram.com/vasilis_vasil/"
+          target="_blank"
           aria-label="Instagram"
         >
           <font-awesome-icon :icon="['fab', 'instagram']" size="lg" />
