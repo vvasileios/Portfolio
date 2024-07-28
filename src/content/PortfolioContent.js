@@ -84,13 +84,22 @@ export const projectsContent = {
     {
       key: "1",
       icon: "",
+      title: "OnWoodByPatelis",
+      link: "https://onwoodbypatelis.com",
+      description:
+        "Built a WordPress website for a furniture company, featuring a modern design and user-friendly interface. The site showcases the company's products and services, with a focus on high-quality visuals and engaging content. Key features include a product catalog, image galleries, and contact forms, providing a comprehensive online presence for the business.",
+      techStack: ["WordPress", "PHP", "HTML", "CSS"],
+    },
+    {
+      key: "2",
+      icon: "",
       title: "Book Catalog RESTful API",
       link: "",
       description:
         "Developed a RESTful API for a book catalog system, enabling users to manage book data, including titles, authors, and genres. Implemented CRUD operations for book entities, with secure authentication and authorization features. The API was built using Java, SpringBoot, and Spring Data JPA, with a H2 In-Memory database.",
     },
     {
-      key: "2",
+      key: "3",
       icon: WeatherWidget,
       title: "Weather Widget",
       link: "https://github.com/vvasileios/WeatherWidget",
@@ -99,21 +108,12 @@ export const projectsContent = {
       techStack: ["JavaScript", "Vue", "TailwindCSS"],
     },
     {
-      key: "3",
+      key: "4",
       icon: "",
       title: "Time-Series Visualization",
       link: "https://github.com/vvasileios/timeseries-visualization",
       description:
         "Created a Vue.js application for visualizing time-series data, featuring interactive line charts and tables. The tool allows users to filter data by date and toggle visibility of different datasets, enhancing the analytical experience. Key functionalities include data representation from JSON datasets, customizable date range filtering, and user-controlled dataset visibility, making it an effective solution for understanding and analyzing time trends.",
-      techStack: ["JavaScript", "Vue", "TailwindCSS"],
-    },
-    {
-      key: "4",
-      icon: "",
-      title: "Spaceflight News Blog",
-      link: "https://github.com/vvasileios/spaceflight-news",
-      description:
-        "Built a Space-Flight News Blog with a Home page for article previews and a Show page for detailed views, utilizing Vue.js and Vuex. Articles are efficiently managed and dynamically retrieved, ensuring an engaging user experience with direct links to full stories, catering to space-flight enthusiasts.",
       techStack: ["JavaScript", "Vue", "TailwindCSS"],
     },
   ],
@@ -123,9 +123,9 @@ export const tableContent = {
   tableProjects: [
     {
       key: "1",
-      title: "OnWoodByMenelaos",
+      title: "OnWoodByPatelis",
       items: ["WordPress", "PHP", "HTML", "CSS"],
-      link: "",
+      link: "https://onwoodbypatelis.com",
     },
     {
       key: "2",
@@ -140,7 +140,7 @@ export const tableContent = {
         "HTML",
         "CSS",
       ],
-      link: "https://github.com/vvasileios/Portfolio",
+      link: "https://vvasileios.com",
     },
     {
       key: "3",
@@ -170,7 +170,7 @@ export const tableContent = {
         "HTML",
         "CSS",
       ],
-      link: "https://github.com/vvasileios/MultiVenture",
+      link: "",
     },
     {
       key: "5",
