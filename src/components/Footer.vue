@@ -5,24 +5,17 @@ import AnchorTag from "./shared/AnchorTag.vue";
 <template>
   <footer class="max-w-lg pb-16 text-sm text-slate-500 sm:pb-0">
     <p>
-      Created in
+      Thank you for stopping by, stay connected! This site is powered by
 
-      <AnchorTag
-        :link="'https://code.visualstudio.com/'"
-        :text="'Visual Studio Code'"
-      />
-
-      by yours truly. Built with
-
-      <AnchorTag :link="'https://vuejs.org/'" :text="'Vue.js'" />
-
-      and
+      <AnchorTag :link="'https://vuejs.org/'" :text="'Vue.js'" />, styled with
 
       <AnchorTag :link="'https://tailwindcss.com/'" :text="'Tailwind CSS'" />
+      and deployed with
 
-      , deployed with
-
-      <AnchorTag :link="'https://vercel.com'" :text="'Vercel'" />.
+      <AnchorTag :link="'https://top.host/el'" :text="'TopHost'" />. <br />
+      <span class="text-slate-400 focus:text-slate-400">
+        © 2024, Vasileios Vasileios.
+      </span>
     </p>
   </footer>
 </template>
