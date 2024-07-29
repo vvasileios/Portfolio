@@ -199,7 +199,7 @@ export const tableContent = {
         "HTML",
         "CSS",
       ],
-      link: "https://github.com/vvasileios/spaceflight-news",
+      link: "",
     },
     {
       key: "8",
