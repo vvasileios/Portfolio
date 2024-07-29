@@ -76,6 +76,8 @@ export const educationContent = {
 };
 
 import WeatherWidget from "/assets/images/WeatherWidget.png";
+import Timeseries from "/assets/images/Timeseries.png";
+import ComingSoon from "/assets/images/ComingSoon.png";
 
 export const projectsContent = {
   id: "projects",
@@ -83,7 +85,7 @@ export const projectsContent = {
   projects: [
     {
       key: "1",
-      icon: "",
+      icon: ComingSoon,
       title: "OnWoodByPatelis",
       link: "https://onwoodbypatelis.com",
       description:
@@ -92,9 +94,9 @@ export const projectsContent = {
     },
     {
       key: "2",
-      icon: "",
+      icon: ComingSoon,
       title: "Book Catalog RESTful API",
-      link: "",
+      link: "https://github.com/vvasileios/book-catalog",
       description:
         "Developed a RESTful API for a book catalog system, enabling users to manage book data, including titles, authors, and genres. Implemented CRUD operations for book entities, with secure authentication and authorization features. The API was built using Java, SpringBoot, and Spring Data JPA, with a H2 In-Memory database.",
     },
@@ -109,7 +111,7 @@ export const projectsContent = {
     },
     {
       key: "4",
-      icon: "",
+      icon: Timeseries,
       title: "Time-Series Visualization",
       link: "https://github.com/vvasileios/timeseries-visualization",
       description:

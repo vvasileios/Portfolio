@@ -46,10 +46,10 @@ defineProps({
     target="_blank"
     rel="noopener noreferrer"
   >
-    <div class="col-span-2 pr-1">
+    <div class="col-span-2 pr-2">
       <img
         v-if="icon"
-        class="rounded group-hover:border-2 group-hover:border-teal-300"
+        class="h-20 w-full object-cover rounded group-hover:border-2 group-hover:border-teal-300"
         :src="icon"
         alt="Icon"
       />
