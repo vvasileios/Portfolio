@@ -45,7 +45,7 @@ const torchStyle = computed(() => {
     windowWidth.value <= 1500
       ? "rgba(29, 78, 216, 0.3)"
       : "rgba(29, 78, 216, 0.2)";
-  debugger;
+
   const adjustedX = isMobile.value
     ? windowWidth.value / 2
     : mouseX.value + scrollX.value;
