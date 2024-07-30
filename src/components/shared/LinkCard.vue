@@ -42,14 +42,14 @@ defineProps({
 <template>
   <a
     :href="link"
-    class="mb-12 group grid sm:grid-cols-7 grid-cols-1 rounded transition duration-300 ease-in-out transform hover:scale-105"
+    class="mb-12 group grid sm:grid-cols-8 grid-cols-1 md:gap-4 rounded transition duration-300 ease-in-out transform hover:scale-105"
     target="_blank"
     rel="noopener noreferrer"
   >
-    <div class="col-span-2 pr-2">
+    <div class="col-span-2">
       <img
         v-if="icon"
-        class="h-20 w-full object-cover rounded group-hover:border-2 group-hover:border-teal-300"
+        class="h-20 sm:mb-0 mb-2 object-cover rounded group-hover:border-2 group-hover:border-teal-300"
         :src="icon"
         alt="Icon"
       />
@@ -62,7 +62,7 @@ defineProps({
       </span>
     </div>
 
-    <div class="col-span-5">
+    <div class="col-span-6">
       <h3
         class="font-medium leading-snug text-slate-200 group-hover:text-teal-300 group-focus:text-slate-300 transition-colors duration-300"
       >

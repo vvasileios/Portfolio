@@ -55,7 +55,7 @@ export const educationContent = {
     },
     {
       key: "2",
-      dates: "Mar 2024 - Present",
+      dates: "Mar 2024 - Jul 2024",
       title: "Back-end Engineering ·",
       school: "TechPro Academy",
       link: "https://www.techproacademy.gr/",
