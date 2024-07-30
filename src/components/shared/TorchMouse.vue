@@ -4,8 +4,10 @@ import { ref, computed, onMounted, onBeforeUnmount } from "vue";
 const mouseX = ref(0);
 const mouseY = ref(0);
 const windowWidth = ref(window.innerWidth);
+const windowHeight = ref(window.innerHeight);
 const scrollX = ref(window.scrollX);
 const scrollY = ref(window.scrollY);
+const isMobile = ref(window.innerWidth <= 768);
 
 onMounted(() => {
   window.addEventListener("mousemove", handleMouseMove);
@@ -22,9 +24,12 @@ onBeforeUnmount(() => {
 
 const handleResize = () => {
   windowWidth.value = window.innerWidth;
+  windowHeight.value = window.innerHeight;
+  isMobile.value = window.innerWidth <= 768;
 };
 
 const handleMouseMove = (event) => {
+  if (isMobile.value) return;
   mouseX.value = event.clientX;
   mouseY.value = event.clientY;
 };
@@ -40,9 +45,13 @@ const torchStyle = computed(() => {
     windowWidth.value <= 1500
       ? "rgba(29, 78, 216, 0.3)"
       : "rgba(29, 78, 216, 0.2)";
-
-  const adjustedX = mouseX.value + scrollX.value;
-  const adjustedY = mouseY.value + scrollY.value;
+  debugger;
+  const adjustedX = isMobile.value
+    ? windowWidth.value / 2
+    : mouseX.value + scrollX.value;
+  const adjustedY = isMobile.value
+    ? window.innerHeight / 2
+    : mouseY.value + scrollY.value;
 
   return {
     top: 0,
