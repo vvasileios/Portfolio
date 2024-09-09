@@ -270,9 +270,10 @@ import wordpress from "/assets/icons/wordpress.png";
 import react from "/assets/icons/react.png";
 
 export const techIcons = [
-    { src: javascript, alt: "JS" },
+    { src: javascript, alt: "JavaScript" },
     { src: vue, alt: "Vue" },
-    { src: typescript, alt: "TS" },
+    { src: typescript, alt: "TypeScript" },
+    { src: php, alt: "PHP" },
     { src: html, alt: "HTML" },
     { src: css, alt: "CSS" },
     { src: tailwind, alt: "TailwindCSS" },
@@ -280,11 +281,10 @@ export const techIcons = [
     { src: react, alt: "React" },
     { src: node, alt: "Node" },
     { src: express, alt: "Express" },
-    { src: php, alt: "PHP" },
     { src: csharp, alt: "C#" },
     { src: java, alt: "Java" },
     { src: springboot, alt: "SpringBoot" },
-    { src: wordpress, alt: "Wordpress" },
-    { src: git, alt: "Git" },
     { src: sql, alt: "SQL" },
+    { src: git, alt: "Git" },
+    { src: wordpress, alt: "Wordpress" },
 ];
