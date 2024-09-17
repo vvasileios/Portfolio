@@ -53,7 +53,7 @@ export const educationContent = {
     schools: [
         {
             key: "1",
-            dates: "Oct 2022 - Oct 2024",
+            dates: "Oct 2022 - Dec 2024",
             title: "MSc, Information Systems ·",
             school: "DUTH",
             link: "https://mais.mst.duth.gr/",
