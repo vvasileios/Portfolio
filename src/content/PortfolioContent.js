@@ -55,8 +55,8 @@ export const educationContent = {
             key: "1",
             dates: "Oct 2022 - Oct 2024",
             title: "MSc, Information Systems ·",
-            school: "IHU",
-            link: "https://mais.ihu.gr/",
+            school: "DUTH",
+            link: "https://mais.mst.duth.gr/",
             description:
                 "Achieved an MSc in Information Systems, focusing on the synergy between technology and business, with key learnings in systems design, web programming, and AI, enhancing capabilities in developing innovative IT solutions.",
         },
