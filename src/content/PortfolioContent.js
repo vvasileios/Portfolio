@@ -140,6 +140,11 @@ export const tableContent = {
             link: "https://vvasileios.com",
         },
         {
+            title: "PHP Projects Hub",
+            items: ["PHP", "HTML", "CSS"],
+            link: "https://github.com/vvasileios/php_projects",
+        },
+        {
             title: "Book Catalog RESTful API",
             items: [
                 "Java",
