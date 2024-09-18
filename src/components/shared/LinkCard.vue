@@ -77,7 +77,11 @@ defineProps({
 
             <p class="mt-2 text-sm leading-normal">{{ description }}</p>
             <ul v-if="list" class="mt-2 flex flex-wrap">
-                <li v-for="item in list" :key="item" class="mr-1.5 mt-2">
+                <li
+                    v-for="(item, index) in list"
+                    :key="index"
+                    class="mr-1.5 mt-2"
+                >
                     <pill-component :colors="'bg-teal-400/10 text-teal-300'">
                         {{ item }}
                     </pill-component>

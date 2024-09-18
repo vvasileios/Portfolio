@@ -9,7 +9,6 @@ export const experienceContent = {
     title: "Experience",
     technicalExperience: [
         {
-            key: "1",
             dates: "April 2024 - Present",
             title: "Software Developer ·",
             company: "StellarBlue",
@@ -27,7 +26,6 @@ export const experienceContent = {
             ],
         },
         {
-            key: "2",
             dates: "Aug 2023 - Feb 2024",
             title: "Software Developer ·",
             company: "Contractuo",
@@ -52,7 +50,6 @@ export const educationContent = {
     title: "Education",
     schools: [
         {
-            key: "1",
             dates: "Oct 2022 - Dec 2024",
             title: "MSc, Information Systems ·",
             school: "DUTH",
@@ -61,7 +58,6 @@ export const educationContent = {
                 "Achieved an MSc in Information Systems, focusing on the synergy between technology and business, with key learnings in systems design, web programming, and AI, enhancing capabilities in developing innovative IT solutions.",
         },
         {
-            key: "2",
             dates: "Mar 2024 - Jul 2024",
             title: "Back-end Engineering ·",
             school: "TechPro Academy",
@@ -70,7 +66,6 @@ export const educationContent = {
                 "Completed an intensive Back-end Engineering bootcamp, gaining hands-on experience in back-end development technologies, with a focus on real-world application and project-based learning.",
         },
         {
-            key: "3",
             dates: "Oct 2013 - Jan 2021",
             title: "IM, Forestry & Management of the Environment & Natural Resources ·",
             school: "DUTH",
@@ -90,7 +85,6 @@ export const projectsContent = {
     title: "Projects",
     projects: [
         {
-            key: "1",
             icon: ComingSoon,
             title: "OnWoodByPatelis",
             link: "https://onwoodbypatelis.com",
@@ -99,7 +93,6 @@ export const projectsContent = {
             techStack: ["WordPress", "PHP", "HTML", "CSS"],
         },
         {
-            key: "2",
             icon: ComingSoon,
             title: "Book Catalog RESTful API",
             link: "https://github.com/vvasileios/book-catalog",
@@ -107,7 +100,6 @@ export const projectsContent = {
                 "Developed a RESTful API for a book catalog system, enabling users to manage book data, including titles, authors, and genres. Implemented CRUD operations for book entities, with secure authentication and authorization features. The API was built using Java, SpringBoot, and Spring Data JPA, with a H2 In-Memory database.",
         },
         {
-            key: "3",
             icon: WeatherWidget,
             title: "Weather Widget",
             link: "https://github.com/vvasileios/WeatherWidget",
@@ -116,7 +108,6 @@ export const projectsContent = {
             techStack: ["JavaScript", "Vue", "TailwindCSS"],
         },
         {
-            key: "4",
             icon: Timeseries,
             title: "Time-Series Visualization",
             link: "https://github.com/vvasileios/timeseries-visualization",
@@ -130,13 +121,11 @@ export const projectsContent = {
 export const tableContent = {
     tableProjects: [
         {
-            key: "1",
             title: "OnWoodByPatelis",
             items: ["WordPress", "PHP", "HTML", "CSS"],
             link: "https://onwoodbypatelis.com",
         },
         {
-            key: "2",
             title: "Portfolio",
             items: [
                 "Vue 3",
@@ -151,7 +140,6 @@ export const tableContent = {
             link: "https://vvasileios.com",
         },
         {
-            key: "3",
             title: "Book Catalog RESTful API",
             items: [
                 "Java",
@@ -167,7 +155,6 @@ export const tableContent = {
             link: "https://github.com/vvasileios/book-catalog",
         },
         {
-            key: "4",
             title: "MultiVenture",
             items: [
                 "Vue 3",
@@ -181,7 +168,6 @@ export const tableContent = {
             link: "",
         },
         {
-            key: "5",
             title: "WeatherWidget",
             items: [
                 "Vue 3",
@@ -194,7 +180,6 @@ export const tableContent = {
             link: "https://github.com/vvasileios/WeatherWidget",
         },
         {
-            key: "6",
             title: "Time-Series Visualization",
             items: [
                 "Vue 3",
@@ -207,7 +192,6 @@ export const tableContent = {
             link: "https://github.com/vvasileios/timeseries-visualization",
         },
         {
-            key: "7",
             title: "Spaceflight News Blog",
             items: [
                 "Vue 3",
@@ -222,13 +206,11 @@ export const tableContent = {
             link: "",
         },
         {
-            key: "8",
             title: "Ever-Clean",
             items: ["JavaScript", "HTML", "CSS", "Bootstrap", "PHP", "MySQL"],
             link: "",
         },
         {
-            key: "9",
             title: "FaceRecognition App",
             items: [
                 "React",
@@ -243,7 +225,6 @@ export const tableContent = {
             link: "",
         },
         {
-            key: "10",
             title: "MicroProjectsHub",
             items: ["JavaScript", "HTML", "CSS"],
             link: "https://github.com/vvasileios/MicroProjectsHub",

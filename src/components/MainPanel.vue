@@ -89,8 +89,10 @@ onUnmounted(() => window.removeEventListener("scroll", updateSection));
         >
             <template #content>
                 <LinkCard
-                    v-for="job in experienceContentRef.technicalExperience"
-                    :key="job.key"
+                    v-for="(
+                        job, index
+                    ) in experienceContentRef.technicalExperience"
+                    :key="index"
                     :dates="job.dates"
                     :title="job.title"
                     :company="job.company"
@@ -109,8 +111,8 @@ onUnmounted(() => window.removeEventListener("scroll", updateSection));
         >
             <template #content>
                 <LinkCard
-                    v-for="school in educationContentRef.schools"
-                    :key="school.key"
+                    v-for="(school, index) in educationContentRef.schools"
+                    :key="index"
                     :dates="school.dates"
                     :title="school.title"
                     :company="school.school"
@@ -126,8 +128,8 @@ onUnmounted(() => window.removeEventListener("scroll", updateSection));
         >
             <template #content>
                 <LinkCard
-                    v-for="project in projectsContentRef.projects"
-                    :key="project.key"
+                    v-for="(project, index) in projectsContentRef.projects"
+                    :key="index"
                     :icon="project.icon"
                     :title="project.title"
                     :description="project.description"

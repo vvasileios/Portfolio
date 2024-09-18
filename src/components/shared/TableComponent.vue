@@ -40,8 +40,8 @@ const handleProject = (link) => {
         </thead>
         <tbody>
             <tr
-                v-for="project in tableBody"
-                :key="project.key"
+                v-for="(project, index) in tableBody"
+                :key="index"
                 class="border-b border-slate-300/10 last:border-none"
             >
                 <td
